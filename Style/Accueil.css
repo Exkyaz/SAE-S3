@@ -1,54 +1,59 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
 body {
     font-family: 'Cinio text';
-    background-image: linear-gradient(to bottom, rgba(255,128,255,0.5), rgba(0,0,128,0.5));
+
+}
+
+header {
+    background-color: #212121;
     background-size: cover;
 }
 
-.myNavbar {
+#myRightImages{
+    max-height: 218px;
+    object-fit: cover;    
+}
+
+#myGalerieImages {
+    max-width: 100%;
+}
+
+.myColumn3 {
+    padding-left: 0px;
+}
+
+#myTitlePresentation {
+    z-index: 2;
     position: absolute;
-    padding: 50px;
+    top: 69px;
+    left: 174px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.myPresentation {
+    z-index: 1;
+}
+
+.mask{
+    max-height: 218px;
+}
+
+.middle {
+    max-height: 300px;
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #bbb;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    box-sizing: border-box;
-    align-items: center;
+    position:sticky;
+    bottom:20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 3;
 }
 
-.myNavbar a {
-    color: white;
-
-}
-
-
-.myNavbar .myLogo {
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-
-
-.myNavbar .myNav-links ul {
-    display: flex;
-}
-
-
-.myNavbar .myNav-links ul li {
-    margin: 0 25px;
-}
-
-#Louvres {
-    margin-top: 20%;
-    margin-left: 5%;
-}
-
-#GallerieImages {
-    margin: 1%;
+#myMiddleImages{
+    max-height: 300px;
+    object-fit: cover;   
 }
