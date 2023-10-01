@@ -1,0 +1,59 @@
+body {
+    font-family: 'Cinio text';
+
+}
+
+header {
+    background-color: #212121;
+    background-size: cover;
+}
+
+#myRightImages{
+    max-height: 218px;
+    object-fit: cover;    
+}
+
+#myGalerieImages {
+    max-width: 100%;
+}
+
+.myColumn3 {
+    padding-left: 0px;
+}
+
+#myTitlePresentation {
+    z-index: 2;
+    position: absolute;
+    top: 69px;
+    left: 174px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.myPresentation {
+    z-index: 1;
+}
+
+.mask{
+    max-height: 218px;
+}
+
+.middle {
+    max-height: 300px;
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #bbb;
+    display: flex;
+    position:sticky;
+    bottom:20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 3;
+}
+
+#myMiddleImages{
+    max-height: 300px;
+    object-fit: cover;   
+}
