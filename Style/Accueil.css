@@ -10,7 +10,8 @@ header {
 
 #myRightImages{
     max-height: 218px;
-    object-fit: cover;    
+    object-fit: cover;
+    filter: opacity(20%);    
 }
 
 #myGalerieImages {
@@ -24,14 +25,20 @@ header {
 #myTitlePresentation {
     z-index: 2;
     position: absolute;
-    top: 69px;
-    left: 174px;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
     text-align: center;
     color: whitesmoke;
+    display: block;
 }
 
 .myPresentation {
     z-index: 1;
+}
+
+.myPresentation:hover .mask {
+    opacity: 1;
 }
 
 .mask{
@@ -44,16 +51,17 @@ header {
 
 /* Solid border */
 hr.solid {
-    border-top: 3px solid #bbb;
+    border-top: 6px solid #F2E8CF;
     display: flex;
     position:sticky;
     bottom:20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
     z-index: 3;
 }
 
 #myMiddleImages{
     max-height: 300px;
     object-fit: cover;   
+    filter: opacity(20%);
 }
