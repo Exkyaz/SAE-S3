@@ -16,6 +16,8 @@ header {
 
 #myGalerieImages {
     max-width: 100%;
+    margin-right: 12px !important;
+    margin-left: auto !important;
 }
 
 .myColumn3 {
@@ -88,6 +90,10 @@ hr.solid {
 
 .non-interactive {
     pointer-events: none;
+}
+
+.non-interactive .searchbar{
+    pointer-events: auto;
 }
 
 .searchbar {
@@ -193,4 +199,8 @@ hr.solid {
     height: 15px;
     background: #999;
     transform: rotate(315deg);
+}
+
+.myRightColumn {
+    padding-right: 0 !important;
 }
