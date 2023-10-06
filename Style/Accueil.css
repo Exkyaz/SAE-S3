@@ -1,0 +1,206 @@
+body {
+    font-family: 'Cinio text';
+
+}
+
+header {
+    background-color: #212121;
+    background-size: cover;
+}
+
+#myRightImages{
+    max-height: 218px;
+    object-fit: cover;
+    filter: opacity(20%);    
+}
+
+#myGalerieImages {
+    max-width: 100%;
+    margin-right: 12px !important;
+    margin-left: auto !important;
+}
+
+.myColumn3 {
+    padding-left: 0px;
+}
+
+#myTitlePresentation {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke;
+    display: block;
+    font-family: 'Saira Condensed';
+}
+
+.myPresentation {
+    z-index: 1;
+}
+
+.myPresentation:hover .mask {
+    opacity: 1;
+}
+
+.mask{
+    max-height: 218px;
+}
+
+.middle {
+    max-height: 300px;
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 6px solid #F2E8CF;
+    display: flex;
+    position:sticky;
+    bottom:20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    z-index: 3;
+    border-radius: 6px;
+}
+
+#myMiddleImages{
+    max-height: 300px;
+    object-fit: cover;   
+    filter: opacity(20%);
+}
+
+#mainTitle {
+    z-index : 3;
+    display : grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+}
+
+#mainTitle h1 {
+    text-align: center;
+    font-size: 120px;
+    font-family: 'Saira Condensed';
+    font-weight: bold;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.non-interactive {
+    pointer-events: none;
+}
+
+.non-interactive .searchbar{
+    pointer-events: auto;
+}
+
+.searchbar {
+    position:relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: #212121;
+    transition: 0.5s;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+}
+
+.searchbar.active {
+    width: 360px;
+}
+
+.searchbar .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: #212121;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index : 5;
+    cursor: pointer;
+}
+
+.searchbar .icon::before {
+    content:'';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: translate(-4px, -4px);
+}
+
+.searchbar .icon::after {
+    content:'';
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background:white;
+    transform: translate(6px, 6px) rotate(315deg);
+}
+
+.searchbar .input {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar .input input {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px 0;
+    background: #212121;
+    color: white;
+}
+
+.clear {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clear::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(45deg);
+}
+
+.clear::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(315deg);
+}
+
+.myRightColumn {
+    padding-right: 0 !important;
+}
