@@ -208,4 +208,71 @@ hr.solid {
 
 /* Agenda */
 
+#myAgenda {
+    font-family: 'Saira Condensed';
+}
+
+#myAgendaTitre {
+    color: #084663;
+    font-weight: 800;
+    font-size: 280%;
+    margin: 2% 0%;
+    padding-left: 2%;
+}
+
+#myAgendaContainer {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#myAgendaBgImage {
+    display: block;
+    margin: 0 auto;
+    filter: brightness(28%);
+}
+
+#myAgendaOverlayText {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform:  translate(-50%, -50%);
+    text-align: left;
+    display: inline;
+    color: #FFFFFF;
+    font-size: 180%;
+    font-weight: 400; 
+}
+
+#myAgendaListe {
+    list-style: none;
+    padding: 0;
+}
+
+.myAgendaArticle {
+    cursor: pointer;
+    margin: 16% 0%;
+    width: 150%; 
+    transition: transform 0.2s;
+}
+
+.myAgendaArticle:hover {
+    transform: scale(120%);
+    color: #B04444;
+}
+
+.myAgendaArticleLien {
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+
+.myAgendaDateArticle, .myAgendaTitreArticle {
+    padding-left: 10%;
+    width: 150%;    
+}
+
+.myAgendaTitreArticle {
+    font-weight: 600;
+}
+
 /* Fin Agenda */ 
