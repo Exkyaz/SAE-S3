@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Cinio Text';
+    src: local('Cinio Text Thin'), local('Cinio-Text-Thin'),
+        url('CinioText-Thin.woff2') format('woff2'),
+        url('CinioText-Thin.woff') format('woff'),
+        url('CinioText-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
