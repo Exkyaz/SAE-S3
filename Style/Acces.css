@@ -2,17 +2,20 @@
 .MyAccess {
 	font-family: 'Saira Condensed';
 	background-color: #084663;
-	height: 55em;
+	height: 60em;
+	
 }
 
-.MyAccess .MyH1AccesRapides {
-
+.MyAccess  .MyH1AccesRapides {
+	font-family: 'Saira Condensed';
 	color: var(--ROUGE, #B04444);
-	/*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+	
     font-weight: 800;
-    font-size: 350%;;
-    
+    font-size: 350%;
+	padding: 2%;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 
 .MyCarouselAccess {
 	position: relative;
@@ -24,20 +27,21 @@
 	position: relative;
 	display: flex;
 	left: 15em;
-	top : 0;
+	top : -2.5em;
 }
 
 .MyCarouselAccess .MySlidesAccess {
 	position: relative;
+	top : -5em;
 
 }
 
 .MyCarouselAccess .MySlidesAccess img {
 	position: absolute;
-	width: 600px;
-	height: 475px;
-	top : 10em;
-	left: 5em;
+	width: 800px;
+	height: 620px;
+	top : 9.6em;
+	left: 4em;
 	opacity: 0;
 
 	z-index: 9999;
@@ -51,8 +55,9 @@
 .MyCarouselAccess .MyOverlaysAccess {
 	position: relative;
 	top: 4em;
-	width: 50em;
-	height: 35em;
+	width: 58em;
+	height: 40em;
+	filter: blur(5px);
 }
 
 .MyCarouselAccess .MyOverlaysAccess .bar {
@@ -62,6 +67,7 @@
 	height: 100%;
 	background: var(--bar-color);
 	transform-origin: left;
+	filter: blur(5px);
 }
 
 .MyCarouselAccess .MyDivNavLinks .MyNavListLinks {
@@ -73,9 +79,11 @@
 	list-style-type: none;
 }
 
-.MyCarouselAccess .MyDivNavLinks .MyNavListLinks .MyH1Access {
-	font-size: 2.3rem;
+.MyCarouselAccess .MyDivNavLinks .MyNavListLinks .nav-linkAcc .MyH1Access {
+	font-size: 2.5rem;
+	font-weight: 800;
 	font-family: 'Saria Condensed';
+	
 	line-height: 1.4;
 	text-decoration: none;
 	color: #FFFFFF;
@@ -83,10 +91,11 @@
 }
 
 
-.MyCarouselAccess .MyNavListLinks .MyH1Access:hover {
+.MyCarouselAccess .MyDivNavLinks .MyNavListLinks .nav-linkAcc .MyH1Access:hover {
 	color: #B04444;
-	font-size: 2.3rem;
+	font-size: 2.5rem;
 	font-family: 'Saria Condensed';
+	font-weight: bold;
 	line-height: 1.4;
 	text-decoration: none;
 	transition: 0.1s;
@@ -94,47 +103,49 @@
 
 
 
-.MyCarouselAccess .MyNavListLinks .MyH1Access .MyStarAccess {
+.MyCarouselAccess .MyDivNavLinks .MyNavListLinks .nav-linkAcc .MyH1Access .MyStarAccess {
 	fill: transparent;
 	stroke: #FFFFFF;
 	stroke-width: 0.9;
 }
 
-.MyCarouselAccess .MyNavListLinks .MyH1Access .MyStarAccess2 {
+.MyCarouselAccess .MyDivNavLinks .MyNavListLinks .nav-linkAcc .MyH1Access .MyStarAccess2 {
 	fill : transparent;
 	stroke:#FFFFFF;
 	stroke-width: 0.8 !important;
 }
 
-.MyCarouselAccess .MyNavListLinks .MyH1Access.active {
+.MyCarouselAccess .MyDivNavLinks .MyNavListLinks .nav-linkAcc .MyH1Access.active {
 	color: #B04444;
 	pointer-events: none;
-	font-size: 2.3rem;
+	font-size: 2.5rem;
 	font-family: 'Saria Condensed';
+	font-weight: bold;
 	line-height: 1.4;
 	text-decoration: none;
 	transition: 0.1s;
 }
 
-.MyCarouselAccess .MyNavListLinks .MyH1Access.active .MyStarAccess {
+.MyCarouselAccess .MyDivNavLinks .MyNavListLinks .nav-linkAcc .MyH1Access.active .MyStarAccess {
 	stroke: #B04444;
 	fill :  #B04444;
 	pointer-events: none;
 }
 
-.MyCarouselAccess .MyDivNavLinks .MyNavListLinks .MyH1Access .MyTextAccess {
+.MyCarouselAccess .MyDivNavLinks .MyNavListLinks .nav-linkAcc .MyH1Access .MyTextAccess {
 	font-size: 1.1rem;
 	font-family: 'Saria Condensed';
+	font-weight: bold;
 	text-decoration: none;
 	color: #FFFFFF;
 	transition: 0.1s;
 }
 
-.MyCarouselAccess .MyNavListLinks .MyH1Access.active .MyTextAccess{
+.MyCarouselAccess .MyDivNavLinks .MyNavListLinks .nav-linkAcc .MyH1Access.active .MyTextAccess{
 	color: #B04444;
 	pointer-events: none;
 	font-size: 1.1rem;
-	font-family: 'Saria Condensed';
+	/*font-family: 'Saria Condensed';*/
 	text-decoration: none;
 	transition: 0.1s;
 }

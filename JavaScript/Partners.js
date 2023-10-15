@@ -1,5 +1,5 @@
 const text1_options = [
-  "A Lire : <ul class = MyulPartners><li><a class = \"Acaca\" href =http://www.beauvais.fr/actualites/3213-la-flamme-olympique-brillera-a-beauvais-le-18-juillet-2024.html>La flamme olympique brillera à Beauvais le 18 juillet 2024</a></li><li><a class = \"Acaca\" href =http://www.beauvais.fr/economie-emploi/offres-d-emploi-de-la-mairie.html>Les offres d'emploi de la Ville de Beauvais et de l'Agglo</a></li><li><a class = \"Acaca\" href =http://www.beauvais.fr/actualites/prochainement-a-beauvais/3305-halloween-monstrueusement-amusant.html>Halloween, monstrueusement amusant - samedi 28 octobre 2023</a></li><li><a class = \"Acaca\" href =http://www.beauvais.fr/actualites/3192-le-projet-du-groupe-scolaire-samuel-paty-se-dessine.html>Le projet du groupe scolaire Samuel Paty se dessine</a></li></ul>",
+  "A Lire : <ul class = MyulPartners><li><a class = \"MyLinkPartners\" href =http://www.beauvais.fr/actualites/3213-la-flamme-olympique-brillera-a-beauvais-le-18-juillet-2024.html>La flamme olympique brillera à Beauvais le 18 juillet 2024</a></li><li><a class = \"MyLinkPartners\" href =http://www.beauvais.fr/economie-emploi/offres-d-emploi-de-la-mairie.html>Les offres d'emploi de la Ville de Beauvais et de l'Agglo</a></li><li><a class = \"MyLinkPartners\" href =http://www.beauvais.fr/actualites/prochainement-a-beauvais/3305-halloween-monstrueusement-amusant.html>Halloween, monstrueusement amusant - samedi 28 octobre 2023</a></li><li><a class = \"MyLinkPartners\" href =http://www.beauvais.fr/actualites/3192-le-projet-du-groupe-scolaire-samuel-paty-se-dessine.html>Le projet du groupe scolaire Samuel Paty se dessine</a></li></ul>",
   "A Lire 2 : Qu'est-ce qu'un Schéma Directeur Cyclable ? Le Schéma Directeur Cyclable est un document de planification définissant la politique cyclable d'un territoire. Il comporte une partie de diagnostic de la situation actuelle et une seconde partie de propositions visant à développer la pratique du vélo au quotidien (aménagements et itinéraires cyclables, stationnement, services, etc.).",
   "<h1>Is life actually real?</h1>",
 ];
@@ -54,9 +54,9 @@ optionPrevious.onclick = function () {
     i = text1_options.length;
   }
   i = i - 1;
-  currentOptionText1.dataset.previousText = text1_options[i];
+  /*currentOptionText1.dataset.previousText = text1_options[i];
 
-  currentOptionText2.dataset.previousText = text2_options[i];
+  currentOptionText2.dataset.previousText = text2_options[i];*/
 
   mainMenu.style.background = color_options[i];
   carousel.classList.add("anim-previous");

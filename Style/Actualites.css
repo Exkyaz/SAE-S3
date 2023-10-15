@@ -1,0 +1,56 @@
+.MyBodyActualites{
+    background-color: #212121;
+}
+
+.MyActualitesContener{
+    background-color: #212121;
+}
+.MyActualitesContener .TopOfActus .MyTitlesActus .MyH1Actus{
+    padding-top: 0.5%;
+    padding-left: 2%;
+    color : #084663;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.MyActualitesContener .TopOfActus .MyTitlesActus .MyTextWayActus{
+    padding-left: 4%;
+    color : #084663;
+    font-weight: bold;
+}
+
+.MyActualitesContener .TopOfActus .MyTitlesActus .MyTextWayActus .MyTextWayActusSuite{
+    color : #B04444 !important;
+    font-weight: bold !important;
+}
+
+.MyActualitesContener .TopOfActus .MyTitlesActus .MyTextWayActus .MyTextWayActusSuite .MyTextWayActusLink{
+    color : #084663 !important;
+    font-weight: bold !important;
+}
+
+.MyActualitesContener .MyButtonActus{
+    width: 45%;
+    height: 75%;
+    overflow: hidden;
+    margin-top: 10%;
+
+
+}
+
+.MyActualitesContener .MyButtons .MyButtonActus{
+    width: 320px;
+    height: 120px;
+    flex-shrink: 0;
+    background-color : #0F6F9C;
+    color : #FFF;
+    margin-left: 2%;
+}
+
+.MyActualitesContener .MyButtons .MyButtonActus:hover{
+    width: 320px;
+    height: 120px;
+    flex-shrink: 0;
+    background-color : #B04444;
+    color : #FFF;
+}
