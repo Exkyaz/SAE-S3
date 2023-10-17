@@ -205,14 +205,16 @@ hr.solid {
     padding-right: 0 !important;
 }
 
-
-/* Agenda */
+/* Début de l'Agenda */
 
 #myAgenda {
+    background: #212121; 
     font-family: 'Saira Condensed';
+    padding-top: 2%;
+    padding-bottom: 8%;
 }
 
-#myAgendaTitre {
+#myAgendaTitle {
     color: #084663;
     font-weight: 800;
     font-size: 280%;
@@ -241,10 +243,10 @@ hr.solid {
     display: inline;
     color: #FFFFFF;
     font-size: 180%;
-    font-weight: 400; 
+    font-weight: 400;
 }
 
-#myAgendaListe {
+#myAgendaList {
     list-style: none;
     padding: 0;
 }
@@ -256,7 +258,7 @@ hr.solid {
     transition: transform 0.2s;
 }
 
-.myAgendaArticle:hover {
+.myAgendaArticle:hover{
     transform: scale(120%);
     color: #B04444;
 }
@@ -266,13 +268,116 @@ hr.solid {
     text-decoration: none;
 }
 
-.myAgendaDateArticle, .myAgendaTitreArticle {
+.myAgendaArticleDate, .myAgendaArticleTitle {
     padding-left: 10%;
     width: 150%;    
 }
 
-.myAgendaTitreArticle {
+.myAgendaArticleTitle {
     font-weight: 600;
 }
 
-/* Fin Agenda */ 
+/* Fin de l'Agenda */
+
+/* Début du Footer */
+
+#myFooter {
+    background: #084663; 
+    font-family: 'Saira Condensed';
+    color: #FFFFFF;
+    text-align: center;
+    height: 180%;
+    padding: 0.4% 0%;
+}
+
+#myFooterTable {
+    width: 80%;
+    margin: 2% auto;
+    font-size: 140%;
+    font-weight: 400; 
+}
+
+#myFooterTable td {
+    width: 33%;
+}
+
+.myFooterTableTitle {
+    display: block;
+    margin: 0% 20%;
+}
+
+.myFooterTableTitle h2{
+    margin: 8% 0%;
+    font-weight: 800;
+}
+
+.myFooterTableBar {
+    width: 2px; 
+    height: 200px; 
+    background-color: #FFFFFF;
+}
+
+#myFooterForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myFooterIcon {
+    cursor: pointer;
+    margin: 0% 2%;
+}
+
+.myFooterIcon:hover path{
+    fill: #B04444;
+}
+
+#myFooterBtnEmail {
+    background-color: #B04444;
+    color: #FFFFFF;
+    border-radius: 40px;
+    border: 0px;
+    padding: 2% 4%;
+    width: 40%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#myFooterBtnEmail:hover {
+    background-color: #FFFFFF;
+    color: #B04444;
+}
+
+#myFooterBtnEmail:hover svg path{
+    fill: #B04444;
+}
+
+#myFooterBtnEmail span {
+    font-size: 80%;
+    margin-right: 20%;
+}
+
+#myFooterEnd {
+    font-size: 120%;
+    font-weight: 600;
+}
+
+.myFooterLink {
+    text-decoration: none;
+    color: #FFFFFF !important;
+    margin: 0% 0.4%;
+}
+
+.myFooterLink:hover {
+    color: #B04444 !important;
+}
+
+#myFooterEndCredit{
+    text-align: right;
+    margin-top: 1%;
+    padding-right: 2%;
+}
+
+/* Fin du Footer */

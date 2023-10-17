@@ -204,23 +204,24 @@
     
   </header>
 
-  <!-- Agenda -->
+  <!-- Début de l'Agenda -->
+
   <div id="myAgenda">
-    <h1 id="myAgendaTitre">&mdash; L'agenda &mdash;</h1>
+    <h1 id="myAgendaTitle"><sup>&mdash;</sup> L'agenda <sub>&mdash;</sub></h1>
     <div id="myAgendaContainer">
       <img id="myAgendaBgImage" src="Images/Architecture_Patrimoine_Agenda.jpg" alt="Image de fond" />
       <div id="myAgendaOverlayText">
-        <ul id="myAgendaListe">
+        <ul id="myAgendaList">
           <li> 
             <a href="https://culture.beauvais.fr/contenu/article/map-2e-edition" class="myAgendaArticleLien">
               <table class="myAgendaArticle" id="myAgendaArticle1">
                 <tr>
                   <td>01-</td>
-                  <td class="myAgendaDateArticle">15 septembre 2023</td>
+                  <td class="myAgendaArticleDate">15 septembre 2023</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td class="myAgendaTitreArticle">Architecture et Patrimoine</td>
+                  <td class="myAgendaArticleTitle">Architecture et Patrimoine</td>
                 </tr>
               </table>
             </a>
@@ -230,11 +231,11 @@
               <table class="myAgendaArticle" id="myAgendaArticle2">
                 <tr>
                   <td>02-</td>
-                  <td class="myAgendaDateArticle">26 septembre 2023</td>
+                  <td class="myAgendaArticleDate">26 septembre 2023</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td class="myAgendaTitreArticle">Campagne Rose</td>
+                  <td class="myAgendaArticleTitle">Campagne Rose</td>
                 </tr>
               </table>
             </a>
@@ -244,11 +245,11 @@
               <table class="myAgendaArticle" id="myAgendaArticle3">
                 <tr>
                   <td>03-</td>
-                  <td class="myAgendaDateArticle">10 octobre 2023</td>
+                  <td class="myAgendaArticleDate">10 octobre 2023</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td class="myAgendaTitreArticle">Réunion Publique</td>
+                  <td class="myAgendaArticleTitle">Réunion Publique</td>
                 </tr>
               </table>
             </a>
@@ -257,7 +258,85 @@
       </div>
     </div>
   </div>
-  <!-- Fin Agenda -->
+
+  <!-- Fin de l'Agenda -->
+
+  <!-- Début du Footer -->
+
+  <footer id="myFooter">
+    <table id="myFooterTable">
+      <tr>
+        <th class="myFooterTableTitle"><h2>Nous contacter</h2></th>
+        <th rowspan="3"><div class="myFooterTableBar"></div></th>
+        <th class="myFooterTableTitle"><h2>Nous suivre</h2></th>
+        <th rowspan="3"><div class="myFooterTableBar"></div></th>
+        <th class="myFooterTableTitle"><h2>Nous lire</h2></th>
+      </tr>
+      <tr>
+        <td>
+          <div id="myFooterForm">
+            <svg id="myFooterFormLink" class="myFooterIcon" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_100_44)">
+                  <path d="M35.2091 24.3892V3.70475H4.33658V42.2954H18.5379C19.5567 42.2954 20.3902 43.1289 20.3902 44.1477C20.3902 45.1665 19.5567 46 18.5379 46H2.48416C1.46534 46 0.631836 45.1665 0.631836 44.1477V1.85232C0.631836 0.833507 1.46545 0 2.48416 0H37.0613C38.0801 0 38.9136 0.833507 38.9136 1.85232V24.3892C38.9136 25.408 38.0801 26.2415 37.0613 26.2415C36.0425 26.2415 35.2091 25.408 35.2091 24.3892ZM44.7487 28.8966C43.9768 28.2174 42.8038 28.2792 42.1245 29.051L31.9674 40.3503L26.8735 35.4416C26.1326 34.7315 24.9594 34.7623 24.2493 35.5033C23.5392 36.2444 23.5701 37.4174 24.3111 38.1275L30.7943 44.3637C31.1338 44.7033 31.5969 44.8886 32.0909 44.8886C32.1217 44.8886 32.1217 44.8886 32.1526 44.8886C32.6466 44.8578 33.1405 44.6416 33.4492 44.2711L44.8721 31.5516C45.5822 30.749 45.5204 29.5759 44.7487 28.8966ZM28.4171 10.8054H11.746C10.7272 10.8054 9.89365 11.6389 9.89365 12.6577C9.89365 13.6765 10.7272 14.51 11.746 14.51H28.4171C29.4359 14.51 30.2694 13.6765 30.2694 12.6577C30.2694 11.6389 29.4359 10.8054 28.4171 10.8054ZM30.2695 22.8456C30.2695 21.8268 29.436 20.9933 28.4172 20.9933H11.746C10.7272 20.9933 9.89365 21.8268 9.89365 22.8456C9.89365 23.8644 10.7272 24.698 11.746 24.698H28.4171C29.4359 24.698 30.2695 23.8644 30.2695 22.8456ZM11.746 30.8725C10.7272 30.8725 9.89365 31.706 9.89365 32.7248C9.89365 33.7436 10.7272 34.5771 11.746 34.5771H16.6856C17.7044 34.5771 18.5379 33.7436 18.5379 32.7248C18.5379 31.706 17.7044 30.8725 16.6856 30.8725H11.746Z" fill="white"/>
+              </g>
+              <defs>
+                  <clipPath id="clip0_100_44">
+                      <rect width="46" height="46" fill="white"/>
+                  </clipPath>
+              </defs>
+            </svg> 
+            <span>Formulaire</span>
+          </div>
+        </td>
+        <td>
+          <svg id="myFooterFacebook" class="myFooterIcon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_101_63)">
+                <path d="M25.2734 49.5313C11.7578 49.5899 0.644532 38.3399 0.966798 24.5996C1.26953 11.5137 12.1094 0.703132 25.5859 0.849616C38.9355 0.9961 49.9805 12.1094 49.6191 25.8691C49.2773 38.8965 38.5254 49.5996 25.2734 49.5313ZM3.92578 25.2246C4.0332 37.4609 13.9551 46.8848 25.6738 46.6797C37.0215 46.4746 46.6406 37.2266 46.6406 25.1953C46.6406 12.959 36.6406 3.4961 24.8828 3.72071C13.5352 3.92579 4.00391 13.2031 3.92578 25.2246Z" fill="white"/>
+                <path d="M20.1953 42.3242C20.1953 36.5723 20.1953 30.8691 20.1953 25.1074C18.9258 25.1074 17.6953 25.1074 16.4355 25.1074C16.4355 23.1543 16.4355 21.2598 16.4355 19.3066C16.6016 19.2969 16.7676 19.2773 16.9434 19.2773C17.8516 19.2773 18.7695 19.2578 19.6777 19.2871C20.0781 19.2969 20.2148 19.1895 20.2051 18.7793C20.1855 17.2949 20.1855 15.8203 20.1953 14.3359C20.2051 12.666 20.6738 11.1523 21.8652 9.94141C23.0176 8.76953 24.4922 8.13477 26.0938 8.03711C28.6719 7.89063 31.2598 7.91016 33.8477 7.86133C33.877 7.86133 33.9062 7.89062 33.9648 7.91992C33.9648 9.88281 33.9648 11.8555 33.9648 13.877C33.7793 13.8867 33.6035 13.8965 33.4375 13.8965C32.2656 13.8965 31.0937 13.8965 29.9219 13.8965C28.7402 13.9063 28.0469 14.6094 28.0469 15.7715C28.0469 16.875 28.0469 17.9883 28.0566 19.0918C28.0566 19.1211 28.0762 19.1504 28.1055 19.2578C30.0391 19.2578 31.9922 19.2578 34.043 19.2578C33.7891 21.2402 33.5547 23.1348 33.3008 25.0977C31.5332 25.0977 29.8047 25.0977 28.0273 25.0977C28.0273 30.8789 28.0273 36.6016 28.0273 42.3438C25.4004 42.3242 22.8418 42.3242 20.1953 42.3242Z" fill="white"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_101_63">
+                    <rect width="50" height="50" fill="white"/>
+                </clipPath>
+            </defs>
+          </svg> 
+          <svg id="myFooterLinkedIn" class="myFooterIcon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.4994 1C10.5216 1 0 11.5276 0 24.5129C0 37.4986 10.5212 48.0267 23.4994 48.0267C36.478 48.0267 47 37.4986 47 24.5129C46.9996 11.5276 36.478 1 23.4994 1ZM13.7482 11.6049C15.3467 11.6049 16.6434 12.788 16.6434 14.2475C16.6434 15.7071 15.3467 16.8902 13.7482 16.8902C12.1489 16.8902 10.8531 15.7071 10.8531 14.2475C10.8531 12.788 12.1489 11.6049 13.7482 11.6049ZM16.6653 34.2079H10.945V19.2727H16.6653V34.2079ZM36.1034 34.2079H30.3554V25.9953C30.3554 25.0577 30.1815 24.3942 29.8349 24.0047C29.4879 23.616 29.0007 23.4209 28.3737 23.4209C27.6801 23.4209 27.1174 23.6835 26.6867 24.2088C26.2555 24.7341 26.0406 25.6761 26.0406 27.0357V34.2079H20.3198V19.2727H25.6464V21.7052C26.4424 20.7119 27.2486 20.0017 28.0637 19.5748C28.8788 19.1483 29.8715 18.9353 31.0429 18.9353C32.6268 18.9353 33.8657 19.4061 34.7609 20.3485C35.6552 21.2905 36.103 22.746 36.103 24.715L36.1034 34.2079Z" fill="white"/>
+          </svg> 
+          <svg id="myFooterTwitter" class="myFooterIcon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.4996 1C10.5212 1 0 11.5215 0 24.4996C0 37.4773 10.5212 48 23.4996 48C36.4784 48 47 37.4777 47 24.4996C47 11.5215 36.4784 1 23.4996 1ZM34.9713 18.6615C34.9713 18.6615 35.53 21.4306 33.5251 26.2952C31.5194 31.1597 26.5565 35.7614 19.7203 36.1888C12.8837 36.6159 9.20146 33.592 9.20146 33.592C14.3294 33.9865 16.5972 31.883 17.8133 31.1926C13.0474 30.5681 12.3571 26.9855 12.3571 26.9855C12.817 27.183 14.2303 27.1172 14.9865 26.9201C10.3197 25.7698 10.221 21.0698 10.221 21.0698C10.221 21.0698 11.9625 21.9572 12.9487 21.7926C8.44527 18.3742 11.0755 13.9042 11.0755 13.9042C17.0246 20.4123 23.335 20.0507 23.335 20.0507L23.3635 20.0934C23.2489 19.635 23.1871 19.1556 23.1871 18.6619C23.1871 15.408 25.8251 12.7705 29.079 12.7705C30.7978 12.7705 32.3447 13.5072 33.4219 14.6815L33.4593 14.6604C35.5625 14.5287 37.1078 13.4113 37.1078 13.4113C36.4674 15.282 35.107 16.1536 34.5389 16.447C34.5462 16.4644 34.5531 16.4819 34.5596 16.499C35.2947 16.321 37.2666 15.8387 37.7985 15.6794C36.6474 17.7826 34.9713 18.6615 34.9713 18.6615Z" fill="white"/>
+          </svg> 
+        </td>
+        <td>S'inscrire à notre newsletter</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>
+          <button id="myFooterBtnEmail">
+            <span>Votre email</span>
+            <svg width="44" height="25" viewBox="0 0 44 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_101_82)">
+                    <path d="M31.8242 0L29.8397 2.02734L38.6408 11.0642H0V13.9358H38.6408L29.8397 22.9727L31.8242 25L44 12.5L31.8242 0Z" fill="white"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_101_82">
+                        <rect width="44" height="25" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg> 
+          </button>
+        </td>
+      </tr>
+    </table>
+    <div id="myFooterEnd">
+      <a class="myFooterLink" href="http://www.beauvaisis.fr/">Accueil</a> | <a class="myFooterLink" href="http://www.beauvaisis.fr/mentions-legales.html">Mention Légales</a>
+      <p id="myFooterEndCredit">Réalisation : Sarah - Wissal - Nadir - Eyci</p>
+    </div>
+      
+  </footer>
+
+  <!-- Fin du Footer -->
 
   <hr class="solid">
     
