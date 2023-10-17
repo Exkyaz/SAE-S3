@@ -1,3 +1,229 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
     background-color: #212121 !important;
+}
+
+.MyH1Superieur {
+
+    color: var(--BLEU, #084663);
+    /*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+    font-family: Saira Condensed;
+    font-weight: 800;
+    font-size: 350%;
+    ;
+    font-style: normal;
+    line-height: normal;
+
+}
+
+.mySuperieur {
+    margin: 50px;
+}
+
+.myRectangle {
+    margin: 10px;
+    padding: 30px;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 30px;
+}
+
+.myRectangle2 {
+    display: flex;
+    margin: 10px;
+    padding: 30px;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 30px;
+}
+
+.myLogoUNI {
+    width: auto;
+    ;
+    height: 400px;
+    flex-shrink: 0;
+    float: left;
+}
+
+
+.myRightElement {
+    color: #000;
+    text-align: center;
+    /* Aligner le texte à droite */
+    font-family: Saira Condensed;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 101.9%;
+    letter-spacing: 0.7px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 55%;
+    padding-right: 5%;
+}
+
+.myLeftText {
+    flex: 1;
+    color: #000;
+    text-align: center;
+    /* Aligner le texte à droite */
+    font-family: Saira Condensed;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 101.9%;
+    letter-spacing: 0.7px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    margin-right: 5%;
+
+}
+
+.myLogoPromeo {
+    width: auto;
+    height: 400px;
+    flex-shrink: 0;
+    float: right;
+}
+
+.myLogoUPJV {
+    width: auto;
+    height: 500px;
+    flex-shrink: 0;
+    float: left;
+    margin-left: 15%;
+
+}
+
+.myLogoITII {
+    width: auto;
+    height: 400px;
+    flex-shrink: 0;
+    float: left;
+    margin-left: 15%;
+
+}
+
+.link {
+    border: 0px solid #00AA66;
+    background-color: #084663;
+    font-size: 25px;
+    color: #FFF;
+    padding: 10px 20px;
+}
+
+.link:hover {
+    background-color: #B04444;
+}
+
+
+
+.side-bar {
+    background: var(--BLEU, #084663);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.3s ease;
+    transition-property: left;
+    z-index: 2;
+}
+
+.side-bar.active {
+    left: 0;
+}
+
+.side-bar .menu {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.side-bar .menu .item {
+    position: relative;
+    cursor: pointer;
+}
+
+.side-bar .menu .item a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+
+.side-bar .menu .item a:hover {
+    background: var(--BLEU, #01b7cd);
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item i {
+    margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu {
+    background: rgba(255, 255, 255, 0.1);
+    display: none;
+}
+
+.side-bar .menu .item .sub-menu a {
+    padding-left: 80px;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.close-btn {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.menu-btn {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 11.5px;
+    margin-left: 11.5px;
+    cursor: pointer;
+}
+
+header {
+    background: var(--BLEU, #084663);
+    width: 100%;
+    height: 82px;
+    flex-shrink: 0;
+}
+
+.myLogo {
+    width: 273px;
+    height: 59px;
+    flex-shrink: 0;
+    float: right;
+    margin-top: 11.5px;
+    margin-right: 11.5px;
+}
+
+.myButton {
+    font-size: 59px;
+    color: #212121;
 }
