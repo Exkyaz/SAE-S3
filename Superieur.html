@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Enseignement Supérieur - Beauvaisis.fr - Communauté d'agglomération du Beauvaisis</title>
+  <link rel="stylesheet" href="Style/Superieur.css">
+  <link rel="stylesheet" href="Polices/Cinio/cinio.css">
+  <link href='https://fonts.googleapis.com/css?family=Saira Condensed' rel='stylesheet'>
+  <link rel="shortcut icon" type="image/png" href="Images/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+  <!-- MDB -->
+  <link rel="stylesheet" href="Libraries/MDB/css/mdb.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="menu-btn">
+      <i class="fas fa-bars myButton"></i>
+    </div>
+
+    <a href="Accueil.html"><img class="myLogo" src="Images/Logo.png"></a>
+
+  </header>
+
+  <div class="side-bar">
+    <div class="close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="menu">
+      <!-- <div class="item"><a href="#">Présentation</a></div>
+      <div class="item"><a href="#">Actualités</a></div>
+      <div class="item"><a href="#">Transport</a></div>
+      <div class="item"><a href="#">Aménagement Plan Climat</a></div>
+      <div class="item"><a href="#">Economie</a></div>
+      <div class="item"><a href="#">Habitat</a></div>
+      <div class="item"><a href="#">Politique de la ville</a></div>
+      <div class="item"><a href="#">Déchets</a></div>
+      <div class="item"><a href="#">Assainissement</a></div>
+      <div class="item"><a href="#">Culture, Loisirs et Famille</a></div>
+      <div class="item"><a href="#">Tourisme</a></div> -->
+      <div class="item">
+        <a class="sub-btn"></i>Présentation<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Présentation Générale</a>
+          <a href="#" class="sub-item">Fonctionnement de l'agglo</a>
+          <a href="#" class="sub-item">Le territoire de l'agglo</a>
+          <a href="#" class="sub-item">Le conseil communautaire</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"></i>Actualités<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Actualités du Beauvaisis</a>
+          <a href="#" class="sub-item">Actualités économiques</a>
+          <a href="#" class="sub-item">Recevoir la Newsletter</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"></i>Transport<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Transports Urbains Corolis</a>
+          <a href="#" class="sub-item">Le réseau Corolis</a>
+          <a href="#" class="sub-item">Se rendre à l'aéroport</a>
+          <a href="#" class="sub-item">TAD - Transport à la Demande</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"></i>Aménagement Plan Climat<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Plan Local Urbanisme Intercommunal</a>
+          <a href="#" class="sub-item">Zones d'Aménagement Concerté</a>
+          <a href="#" class="sub-item">Rapport d'activités Développement Durable</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"></i>Economie<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Pourquoi le Beauvaisis ?</a>
+          <a href="#" class="sub-item">Les secteurs clés du Beauvaisis</a>
+          <a href="#" class="sub-item">Ils ont choisi le Beauvaisis</a>
+          <a href="#" class="sub-item">Porte ouverte à l'international</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"></i>Habitat<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Plan Local Urbanisme Intercommunal</a>
+          <a href="#" class="sub-item">Plan Rénovation Confort du Beauvaisis</a>
+          <a href="#" class="sub-item">Programme Local de l'Habitat</a>
+          <a href="#" class="sub-item">Observatoire de l'Habitat</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"></i>Politique de la ville<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Politique de la ville</a>
+          <a href="#" class="sub-item">Contrat de ville 2023</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"></i>Déchets<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Collecte des déchets ménagers</a>
+          <a href="#" class="sub-item">Collecte du verre</a>
+          <a href="#" class="sub-item">Collecte des déchets végétaux</a>
+          <a href="#" class="sub-item">Collecte des encombrants</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"></i>Assainissement<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Assainissement Non Collectif - SPANC</a>
+          <a href="#" class="sub-item">Assainissement Collectif - Demande de Diagnostic</a>
+          <a href="#" class="sub-item">Assainissement des eaux usées</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"></i>Culture, Loisirs et Famille<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Maladerie Saint-Lazare</a>
+          <a href="#" class="sub-item">Ecole d'art du Beauvaisis</a>
+          <a href="#" class="sub-item">Conservatoire Eustache du Caurroy</a>
+          <a href="#" class="sub-item">Le réseau des médiathèques</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"></i>Tourisme<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Office de Tourisme du Beauvaisis</a>
+          <a href="#" class="sub-item">Aéroport de Beauvais-Tillé</a>
+          <a href="#" class="sub-item">Hôtels dans le Beauvaisis</a>
+          <a href="#" class="sub-item">Chambres d'hôtes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mySuperieur">
+    <H1 class="MyH1Superieur"><sup>&mdash;</sup>L'Enseignement Superieur<sub>&mdash;</sub></H1>
+    <div class="myRectangle">
+      <div class="myLeftElement">
+        <img class="myLogoUNI" src="Images/UniLaSalle.png">
+      </div>
+      <div class="myRightElement">
+        <p>
+          En 5 années de cursus à LaSalle Beauvais, nous formons des ingénieurs capables de poser et comprendre des
+          problèmes complexes dans les domaines de l’agronomie, de l’agroalimentaire, de l’alimentation-santé, de la
+          géologie et de l’environnement.
+          <hr />
+          LaSalle Beauvais est une école dite « à prépa intégrée », c'est-à-dire accessible directement après le bac.
+          Après un recrutement sélectif, la formation couvre toutes les nécessaires à l’ingénieur, en s’appuyant sur une
+          recherche de haut niveau et sur une ouverture à l’international.
+          <hr />
+        </p>
+        <a href="https://www.unilasalle.fr"><button class="link">➜ Site Officiel</button></a>
+      </div>
+    </div>
+
+    <div class="myRectangle2">
+      <div class="myLeftText">
+        <p>
+          Des métiers d'avenir, des carrières passionnantes, l'alternance, la voie de la réussite!
+          <hr />
+          Chaque année, 2 000 jeunes font confiance à Proméo pour obtenir un diplôme ou une qualification, ainsi qu'une
+          première expérience professionnelle.
+          Du positionnement des candidats à l'aide de test adaptés, en passant par leur placement en entreprise, nos
+          "alternautes" font l'objet, tout au long de leur formation, d'un suivi pédagogique individuel.
+          <hr />
+        </p>
+        <a href="http://www.promeo-formation.fr"><button class="link">➜ Site Officiel</button></a>
+
+      </div>
+
+      <div class="myLeftElement2">
+        <img class="myLogoPromeo" src="Images/Promeo.png">
+      </div>
+
+    </div>
+
+    <div class="myRectangle">
+      <div class="myLeftElement">
+        <img class="myLogoUPJV" src="Images/UPJV.png">
+      </div>
+      <div class="myRightElement">
+        <p>
+          L'implantation de l'Antenne Universitaire à Beauvais permet à plus de 500 jeunes de suivre une formation de
+          l'enseignement supérieur et d'avoir un diplôme reconnu.
+          <hr />
+          L'Antenne Universitaire de Beauvais réunit 4 domaines de formation issus des UFR de l'UPJV à Amiens. Ces 4
+          domaines lui permettent de répondre aux attentes et besoins du territoire et des jeunes souhaitant poursuivre
+          des études dans l'enseignement supérieur.
+          <hr />
+        </p>
+        <a href="https://www.u-picardie.fr"><button class="link">➜ Site Officiel</button></a>
+      </div>
+    </div>
+
+    <div class="myRectangle2">
+      <div class="myLeftText">
+        <p>
+          L'IFSI de Beauvais propose un projet pédagogique réellement centré sur l'étudiant et un fort partenariat entre
+          l'Institut et les lieux de stages. L'Institut est agréé pour 129 étudiants par promotion (pour le diplôme
+          d'état d'infirmier), encadrés par 18 formateurs et 150 intervenants.
+          <hr />
+          L'IFSI met à disposition :
+
+          • des salles de cours et de travaux dirigés
+          • du matériel audiovisuel de dernière génération
+          • un centre de documentation avec accès à internet et WIFI
+          • 200 lieux de stages pour acquérir l'ensemble des pratiques de soins infirmiers
+          • des actions de santé publique.
+          <hr />
+        </p>
+        <a href="http://www.ch-beauvais.fr/professionnels/ifsi/116-institut-de-formation-en-soins-infirmiers"><button
+            class="link">➜ Site Officiel</button></a>
+
+      </div>
+
+      <div class="myLeftElement2">
+        <img class="myLogoPromeo" src="Images/IFSI.png">
+      </div>
+
+    </div>
+
+    <div class="myRectangle">
+      <div class="myLeftElement">
+        <img class="myLogoITII" src="Images/ITII.png">
+      </div>
+      <div class="myRightElement">
+        <p>
+          L’école d’Ingénieurs ITII (en partenariat avec le CNAM et PROMEO) propose 3 filières d’ingénieurs en Systèmes
+          électriques, Informatique et Mécanique (option production ou maintenance).
+          <hr />
+          L'école propose diverses formations :
+          • Automatique et robotique
+          • Mécanique option production
+          • Mécanique option maintenance
+          • Informatique
+          • Systemes electriques
+          <hr />
+        </p>
+        <a href="https://www.itii-picardie.fr"><button class="link">➜ Site Officiel</button></a>
+      </div>
+    </div>
+
+    <div class="myRectangle2">
+      <div class="myLeftText">
+        <p>
+          En septembre 2019, l’INSPE ( Institut National Supérieur du Professorat et de l’Education ) succède à l’EPSE
+          (Ecole Supérieure du Professorat et de l’Education) crée en 2013 qui lui-même succédait aux IUFM (Instituts
+          Universitaires de Formation des Maîtres).
+          <hr />
+          Le MEEF Mention - 1er degré - parcours PE prépare les étudiants qui se destinent au métier d'enseignant dans
+          le 1er degré à la prise en compte des besoins éducatifs des élèves de la maternelle à la fin de l'école
+          élémentaire.
+          <hr />
+        </p>
+        <a href="https://www.u-picardie.fr/ecole/inspe/inspe-centre-de-beauvais-490705.kjsp?RH=ESPE00"><button
+            class="link">➜ Site Officiel</button></a>
+
+      </div>
+
+      <div class="myLeftElement2">
+        <img class="myLogoPromeo" src="Images/UPJV.png">
+      </div>
+
+    </div>
+
+
+    <div class="myRectangle">
+      <div class="myLeftElement">
+        <img class="myLogoITII" src="Images/IUTOISE.jpg">
+      </div>
+      <div class="myRightElement">
+        <p>
+          DUT (BAC+2) :
+          • Gestion des Entreprises et des Administrations
+          • Techniques de Commercialisation
+          <hr />
+          Licences Professionnelles (BAC+3) :
+          • Développement Commercial et Gestion des Echanges
+          • Contrôle de Gestion PME/PMI
+          • Gestion de Comptabilité et de la Paie
+          • Gestion des Ressources Humaines
+          • Entreprenariat et Management PME/PMI
+          <hr />
+        </p>
+        <a href="https://iut-oise.u-picardie.fr"><button class="link">➜ Site Officiel</button></a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script src="JavaScript/Superieur.js"></script>
+</body>
