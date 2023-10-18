@@ -119,7 +119,7 @@ body {
 }
 
 .link {
-    border: 0px solid #00AA66;
+    border: 0px;
     background-color: #084663;
     font-size: 25px;
     color: #FFF;
@@ -134,7 +134,8 @@ body {
 
 .side-bar {
     background: var(--BLEU, #084663);
-    width: 290px;
+    min-width: 300px;
+    max-width: auto;
     height: 100vh;
     position: fixed;
     top: 0;
