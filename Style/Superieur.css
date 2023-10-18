@@ -2,6 +2,10 @@
 
 body {
     background-color: #212121 !important;
+    /* background-image: url('../Images/Beauvais\ Maison.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
 }
 
 .MyH1Superieur {
@@ -19,6 +23,9 @@ body {
 
 .mySuperieur {
     margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    ;
 }
 
 .myRectangle {
@@ -44,10 +51,11 @@ body {
 
 .myLogoUNI {
     width: auto;
-    ;
-    height: 400px;
+    height: 300px;
     flex-shrink: 0;
     float: left;
+    margin-top: 100px;
+    margin-left: 50px;
 }
 
 
