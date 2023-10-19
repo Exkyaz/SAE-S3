@@ -1,0 +1,91 @@
+/* Début de Tourisme */
+
+#myTourism {
+    background: #212121; 
+    font-family: 'Saira Condensed';
+    color: #FFFFFF;
+    padding: 2% 0%;
+}
+
+#myTourismTitle {
+    font-size: 360%;
+    font-weight: 800 !important;
+    color: #084663;
+    padding-left: 4%;
+    margin-bottom: 4%;
+}
+
+#myTourismNav {
+    text-align: center;
+}
+
+.myTourismBtn {
+    border: 0px;
+    background-color: #0F6F9C;
+    font-size: 200%;
+    color: #FFF;
+    padding: 1% 2%;
+    cursor: pointer;
+    margin: 0% 2%;
+
+}
+
+.myTourismBtn:hover {
+    opacity: 0.7;
+}
+
+.myTourismPage {
+    align-items: center;
+    justify-content: center;
+    padding: 0% 8%;
+}
+
+.myTourismImage {
+    width: 80%;
+    margin: 4%;
+}
+
+.myTourismText {
+    font-size: 120%;
+    width: 80%;
+}
+
+.myTourismText h2 {
+    font-weight: 800 !important;
+}
+
+.myTourismText span {
+    text-decoration: underline;
+}
+
+.myTourismPageContainer {
+    align-self: flex-end;
+}
+
+.myTourismPageBtn {
+    background-color: #B04444;
+    color: #FFFFFF;
+    border-radius: 40px;
+    border: 0px;
+    padding: 8% 16%;
+    width: 200%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.myTourismPageBtn:hover {
+    background-color: #FFFFFF;
+    color: #B04444;
+}
+
+.myTourismPageBtn:hover path{
+    fill: #B04444;
+}
+
+.myTourismPageBtn span {
+    font-size: 180%;
+    margin-left: 12%;
+}
+
+/* Fin de Tourisme */
