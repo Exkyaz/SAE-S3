@@ -71,3 +71,5 @@ optionPrevious.onclick = function () {
     carousel.classList.remove("anim-previous");
   }, 650);
 };
+
+

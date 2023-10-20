@@ -1,72 +1,55 @@
-var buttonMyAllActus = document.getElementById("MyAllActus");
-var buttonMyCultureActus = document.getElementById("MyCultureActus");
-var buttonMyEnvironnementActus = document.getElementById("MyEnvironnementActus");
-var buttonMyEnseignementActus = document.getElementById("MyEnseignementActus");
+const containerMenu = document.querySelector('.container-menu');
+const btnMenu = document.querySelector('.btn-menu');
 
+btnMenu.addEventListener('click', () => {
+  containerMenu.classList.toggle('active');
+});
 
-const DivMyContentArticlesActusNew = createElement("div", { id: "MyContentArticlesNew" });
-document.querySelector('#MyActualitesContener').append(DivMyContentArticlesActusNew);
-DivMyContentArticlesActusNew.innerHTML = `<p style = 'color : #FFFFF'> blabla HUFDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>`;
-            
+/*redirections au clic d'un cercle*/
+const urls = [
+  'http://www.beauvaisis.fr/actualites/actualites-economiques.html',
+  'http://www.beauvaisis.fr/actualites/recevoir-la-newsletter.html',
+  'http://www.beauvaisis.fr/actualites/flux-rss.html',
+  'http://www.beauvaisis.fr/politique-de-la-ville/contrat-de-ville-2023.html'
+];
 
-/*Pour création Culture*/
-const DivMyCultureActus1 = createElement("div", { id: "DivMyCultureActus1" });
-const DivMyCultureActus2 = createElement("div", { id: "DivMyCultureActus2" });
-const DivMyCultureActus3 = createElement("div", { id: "DivMyCultureActus3" });
+const circles = [
+  document.querySelector('.circle-1'),
+  document.querySelector('.circle-2'),
+  document.querySelector('.circle-3'),
+  document.querySelector('.circle-4')
+];
 
-
-
-/* Pour création Environnement */
-const DivMyEnvironnementActus1 = createElement("div", { id: "DivMyEnvironnementActus1" });
-const DivMyEnvironnementActus2 = createElement("div", { id: "DivMyEnvironnementActus2" });
-const DivMyEnvironnementActus3 = createElement("div", { id: "DivMyEnvironnementActus3" });
-
-
-/* Pour création Enseignement */
-const DivMyEnseignementActus1 = createElement("div", { id: "DivMyEnseignementActus1" });
-const DivMyEnseignementActus2 = createElement("div", { id: "DivMyEnseignementActus2" });
-const DivMyEnseignementActus3 = createElement("div", { id: "DivMyEnseignementActus3" });
-
+for (let i = 0; i < circles.length; i++) {
+  circles[i].addEventListener('click', () => {
+    window.open(urls[i], '_blank');
+  });
+}
 
 
 
 
-function createElement(tagName, attributes = {}) {
-    const element = document.createElement(tagName)
-    for (const [attribute, value] of Object.entries(attributes)) {
-        element.setAttribute(attribute, value)
+const categoryTitle = document.querySelectorAll('.category-title');
+const allCategoryPosts = document.querySelectorAll('.all');
+
+for(let i = 0; i < categoryTitle.length; i++){
+    categoryTitle[i].addEventListener('click', filterPosts.bind(this, categoryTitle[i]));
+}
+
+function filterPosts(item){
+    changeActivePosition(item);
+    for(let i = 0; i < allCategoryPosts.length; i++){
+        if(allCategoryPosts[i].classList.contains(item.attributes.id.value)){
+            allCategoryPosts[i].style.display = "flex";
+        } else {
+            allCategoryPosts[i].style.display = "none";
+        }
     }
-    return element
 }
 
-
-buttonMyAllActus.addEventListener("click",() => btnAllActusClick())
-buttonMyCultureActus.addEventListener("click",() => btnCultureActusClick())
-buttonMyEnvironnementActus.addEventListener("click",() => btnEnvironnementActusClick())
-buttonMyEnseignementActus.addEventListener("click",() => btnEnseignementActusClick())
-
-function btnAllActusClick(){
-    DivMyContentArticlesActusNew.innerHTML = "";
-}
-
-function btnCultureActusClick(){
-    DivMyContentArticlesActusNew.innerHTML = "";
-    document.querySelector('#MyContentArticlesNew').append(DivMyCultureActus1);
-    document.querySelector('#MyContentArticlesNew').append(DivMyCultureActus2);
-    document.querySelector('#MyContentArticlesNew').append(DivMyCultureActus3);
-}
-
-function btnEnvironnementActusClick(){
-    DivMyContentArticlesActusNew.innerHTML = "";
-    document.querySelector('#MyContentArticlesNew').append(DivMyEnvironnementActus1);
-    document.querySelector('#MyContentArticlesNew').append(DivMyEnvironnementActus2);
-    document.querySelector('#MyContentArticlesNew').append(DivMyEnvironnementActus3);
-}
-
-function btnEnseignementActusClick(){
-    DivMyContentArticlesActusNew.innerHTML = "";
-    document.querySelector('#MyContentArticlesNew').append(DivMyEnseignementActus1);
-    document.querySelector('#MyContentArticlesNew').append(DivMyEnseignementActus2);
-    document.querySelector('#MyContentArticlesNew').append(DivMyEnseignementActus3);
-
-}
+function changeActivePosition(activeItem){
+    for(let i = 0; i < categoryTitle.length; i++){
+        categoryTitle[i].classList.remove('actived');
+    }
+    activeItem.classList.add('actived');
+};
