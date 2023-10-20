@@ -45,3 +45,5 @@ function myFooterRediriger(siteUrl) {
 }
 
 /* Fin du Footer */
+
+/* Début du Header */
