@@ -8,10 +8,10 @@ header {
     background-size: cover;
 }
 
-#myRightImages{
+#myRightImages {
     max-height: 218px;
     object-fit: cover;
-    filter: opacity(20%);    
+    filter: opacity(20%);
 }
 
 #myGalerieImages {
@@ -29,7 +29,7 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:  translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     color: whitesmoke;
     display: block;
@@ -38,13 +38,56 @@ header {
 
 .myPresentation {
     z-index: 1;
+    position: relative;
 }
 
 .myPresentation:hover .mask {
     opacity: 1;
 }
 
-.mask{
+.presentation-title {
+    display: none;
+}
+
+.myPresentation:hover .presentation-title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Saira Condensed';
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 25% 10%;
+}
+
+.mySubtitle {
+    padding: 10% 20%;
+    color: #FFF;
+    font-family: Saira Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.myPresentation:hover #myTitlePresentation {
+    display: none;
+}
+
+.mask {
     max-height: 218px;
 }
 
@@ -56,27 +99,27 @@ header {
 hr.solid {
     border-top: 6px solid #F2E8CF;
     display: flex;
-    position:sticky;
-    bottom:20px;
+    position: sticky;
+    bottom: 20px;
     margin-left: 200px;
     margin-right: 200px;
     z-index: 3;
     border-radius: 6px;
 }
 
-#myMiddleImages{
+#myMiddleImages {
     max-height: 300px;
-    object-fit: cover;   
+    object-fit: cover;
     filter: opacity(20%);
 }
 
 #mainTitle {
-    z-index : 3;
-    display : grid;
+    z-index: 3;
+    display: grid;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:  translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 #mainTitle h1 {
@@ -92,12 +135,12 @@ hr.solid {
     pointer-events: none;
 }
 
-.non-interactive .searchbar{
+.non-interactive .searchbar {
     pointer-events: auto;
 }
 
 .searchbar {
-    position:relative;
+    position: relative;
     width: 60px;
     height: 60px;
     border-radius: 60px;
@@ -106,7 +149,7 @@ hr.solid {
     overflow: hidden;
     top: 50%;
     left: 50%;
-    transform:  translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .searchbar.active {
@@ -124,12 +167,12 @@ hr.solid {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index : 5;
+    z-index: 5;
     cursor: pointer;
 }
 
 .searchbar .icon::before {
-    content:'';
+    content: '';
     position: absolute;
     width: 15px;
     height: 15px;
@@ -139,11 +182,11 @@ hr.solid {
 }
 
 .searchbar .icon::after {
-    content:'';
+    content: '';
     position: absolute;
     width: 3px;
     height: 12px;
-    background:white;
+    background: white;
     transform: translate(6px, 6px) rotate(315deg);
 }
 
@@ -208,7 +251,7 @@ hr.solid {
 /* Début de l'Agenda */
 
 #myAgenda {
-    background: #212121; 
+    background: #212121;
     font-family: 'Saira Condensed';
     padding-top: 2%;
     padding-bottom: 8%;
@@ -238,7 +281,7 @@ hr.solid {
     position: absolute;
     top: 50%;
     right: 2%;
-    transform:  translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: left;
     display: inline;
     color: #FFFFFF;
@@ -254,11 +297,11 @@ hr.solid {
 .myAgendaArticle {
     cursor: pointer;
     margin: 16% 0%;
-    width: 150%; 
+    width: 150%;
     transition: transform 0.2s;
 }
 
-.myAgendaArticle:hover{
+.myAgendaArticle:hover {
     transform: scale(120%);
     color: #B04444;
 }
@@ -268,9 +311,10 @@ hr.solid {
     text-decoration: none;
 }
 
-.myAgendaArticleDate, .myAgendaArticleTitle {
+.myAgendaArticleDate,
+.myAgendaArticleTitle {
     padding-left: 10%;
-    width: 150%;    
+    width: 150%;
 }
 
 .myAgendaArticleTitle {
@@ -282,7 +326,7 @@ hr.solid {
 /* Début du Footer */
 
 #myFooter {
-    background: #084663; 
+    background: #084663;
     font-family: 'Saira Condensed';
     color: #FFFFFF;
     text-align: center;
@@ -294,7 +338,7 @@ hr.solid {
     width: 80%;
     margin: 2% auto;
     font-size: 140%;
-    font-weight: 400; 
+    font-weight: 400;
 }
 
 #myFooterTable td {
@@ -306,14 +350,14 @@ hr.solid {
     margin: 0% 20%;
 }
 
-.myFooterTableTitle h2{
+.myFooterTableTitle h2 {
     margin: 8% 0%;
     font-weight: 800;
 }
 
 .myFooterTableBar {
-    width: 2px; 
-    height: 200px; 
+    width: 2px;
+    height: 200px;
     background-color: #FFFFFF;
 }
 
@@ -328,7 +372,7 @@ hr.solid {
     margin: 0% 2%;
 }
 
-.myFooterIcon:hover path{
+.myFooterIcon:hover path {
     fill: #B04444;
 }
 
@@ -350,7 +394,7 @@ hr.solid {
     color: #B04444;
 }
 
-#myFooterBtnEmail:hover svg path{
+#myFooterBtnEmail:hover svg path {
     fill: #B04444;
 }
 
@@ -374,7 +418,7 @@ hr.solid {
     color: #B04444 !important;
 }
 
-#myFooterEndCredit{
+#myFooterEndCredit {
     text-align: right;
     margin-top: 1%;
     padding-right: 2%;
