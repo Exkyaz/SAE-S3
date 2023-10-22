@@ -1,0 +1,348 @@
+/* Début de Tourisme */
+
+#myTourism {
+    background: #212121; 
+    font-family: 'Saira Condensed';
+    color: #FFFFFF;
+    padding: 2% 0% 6% 0%;
+}
+
+#myTourismTitle {
+    font-size: 360%;
+    font-weight: 800 !important;
+    color: #084663;
+    padding-left: 4%;
+    margin-bottom: 4%;
+}
+
+#myTourismNav {
+    text-align: center;
+}
+
+.myTourismBtn {
+    border: 0px;
+    background-color: #0F6F9C;
+    font-size: 200%;
+    color: #FFF;
+    padding: 1% 2%;
+    cursor: pointer;
+    margin: 0% 2%;
+
+}
+
+.myTourismBtn:hover {
+    opacity: 0.7;
+}
+
+.myTourismPage {
+    align-items: center;
+    justify-content: center;
+    padding: 0% 8%;
+}
+
+.myTourismImage {
+    width: 80%;
+    margin: 4%;
+}
+
+.myTourismText {
+    font-size: 120%;
+    width: 80%;
+}
+
+.myTourismText h2 {
+    font-weight: 800 !important;
+}
+
+.myTourismText span {
+    text-decoration: underline;
+}
+
+.myTourismPageContainer {
+    align-self: flex-end;
+}
+
+.myTourismPageBtn {
+    background-color: #B04444;
+    color: #FFFFFF;
+    border-radius: 40px;
+    border: 0px;
+    padding: 8% 16%;
+    width: 200%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.myTourismPageBtn:hover {
+    background-color: #FFFFFF;
+    color: #B04444;
+}
+
+.myTourismPageBtn:hover path{
+    fill: #B04444;
+}
+
+.myTourismPageBtn span {
+    font-size: 180%;
+    margin-left: 12%;
+}
+
+.myCarrousel {
+    max-width: 1620px;
+    max-height: auto;
+    margin: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Fin de Tourisme */
+
+/* Début du Footer */
+
+#myFooter {
+    background: #084663; 
+    font-family: 'Saira Condensed';
+    color: #FFFFFF;
+    text-align: center;
+    height: 180%;
+    padding: 0.4% 0%;
+}
+
+#myFooterTable {
+    width: 80%;
+    margin: 2% auto;
+    font-size: 140%;
+    font-weight: 400; 
+}
+
+#myFooterTable td {
+    width: 33%;
+}
+
+.myFooterTableTitle {
+    display: block;
+    margin: 0% 20%;
+}
+
+.myFooterTableTitle h2{
+    margin: 8% 0%;
+    font-weight: 800;
+}
+
+.myFooterTableBar {
+    width: 2px; 
+    height: 200px; 
+    background-color: #FFFFFF;
+}
+
+#myFooterForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myFooterIcon {
+    cursor: pointer;
+    margin: 0% 2%;
+}
+
+.myFooterIcon:hover path{
+    fill: #B04444;
+}
+
+#myFooterBtnEmail {
+    background-color: #B04444;
+    color: #FFFFFF;
+    border-radius: 40px;
+    border: 0px;
+    padding: 2% 4%;
+    width: 40%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#myFooterBtnEmail:hover {
+    background-color: #FFFFFF;
+    color: #B04444;
+}
+
+#myFooterBtnEmail:hover svg path{
+    fill: #B04444;
+}
+
+#myFooterBtnEmail span {
+    font-size: 80%;
+    margin-right: 20%;
+}
+
+#myFooterEnd {
+    font-size: 120%;
+    font-weight: 600;
+}
+
+.myFooterLink {
+    text-decoration: none;
+    color: #FFFFFF !important;
+    margin: 0% 0.4%;
+}
+
+.myFooterLink:hover {
+    color: #B04444 !important;
+}
+
+#myFooterEndCredit{
+    text-align: right;
+    margin-top: 1%;
+    padding-right: 2%;
+}
+
+/* Fin du Footer */
+
+/* Début du Header */
+
+.side-bar {
+    background: var(--BLEU, #084663);
+    min-width: 300px;
+    max-width: auto;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.3s ease;
+    transition-property: left;
+    z-index: 2;
+}
+
+.side-bar.active {
+    left: 0;
+}
+
+.side-bar .menu {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.side-bar .menu .item {
+    position: relative;
+    cursor: pointer;
+}
+
+.side-bar .menu .item a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+
+.side-bar .menu .item a:hover {
+    background: var(--BLEU, #B04444);
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item i {
+    margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu {
+    background: rgba(255, 255, 255, 0.1);
+    display: none;
+}
+
+.side-bar .menu .item .sub-menu a {
+    padding-left: 80px;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.close-btn {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.menu-btn {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 11.5px;
+    margin-left: 11.5px;
+    cursor: pointer;
+}
+
+header {
+    background: var(--BLEU, #084663);
+    width: 100%;
+    height: 82px;
+    flex-shrink: 0;
+}
+
+.myLogo {
+    width: 273px;
+    height: 59px;
+    flex-shrink: 0;
+    float: right;
+    margin-top: 11.5px;
+    margin-right: 11.5px;
+}
+
+.myButton {
+    font-size: 59px;
+    color: #FFF;
+}
+
+/* Fin du Header */
+
+/* Début des Hébergements */
+
+#myTitlePresentation {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke;
+    display: block;
+    font-family: 'Saira Condensed';
+}
+
+.myPresentation {
+    z-index: 1;
+    margin: 4% 2%;
+}
+
+.myPresentation:hover .mask {
+    opacity: 1;
+}
+
+#myRightImages {
+    margin: 0px !important;
+    filter: opacity(20%);
+    height: 500px;
+    width: auto;
+}
+
+#myTourismPageAccomodation {
+    display: flex;
+}
+
+/* Fin des Hébergements */
