@@ -4,6 +4,22 @@ icon.onclick = function()  {
     search.classList.toggle('active')
 }
 
+document.getElementById("mySearch").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        const userInput = this.value.toLowerCase();
+
+        if (userInput.includes("tourisme")) {
+
+            window.location.href = "../Tourisme.html";
+        } else if (userInput.includes("superieur")) {
+
+            window.location.href = "../Superieur.html";
+        } else if (userInput.includes("actualites")) {
+            window.location.href = "../Superieur.html";
+        }
+    }
+});
+
 /* Début de l'Agenda */
 
 document.getElementById('myAgendaArticle1').addEventListener('mouseover', function() {
