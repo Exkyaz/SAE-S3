@@ -82,6 +82,12 @@ header {
     text-transform: uppercase;
 }
 
+.mySubtitle:hover {
+    color: #B04444;
+    font-weight: bold;
+    font-size: 24px;
+}
+
 .myPresentation:hover #myTitlePresentation {
     display: none;
 }

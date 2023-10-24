@@ -89,6 +89,7 @@
 }
 
 .myCarrousel {
+    width: 75%;
     max-width: 1620px;
     max-height: auto;
     margin: 4%;
@@ -97,6 +98,9 @@
     display: block;
 }
 
+.myFleche {
+    font-size: 200%;
+}
 /* Fin de Tourisme */
 
 /* Début du Footer */
