@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #212121 !important;
+    /* background-image: url('../Images/Beauvais\ Maison.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.MyH1Superieur {
+
+    color: var(--BLEU, #084663);
+    /*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+    font-family: Saira Condensed;
+    font-weight: 800;
+    font-size: 350%;
+    ;
+    font-style: normal;
+    line-height: normal;
+
+}
+
+.mySuperieur {
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    ;
+}
+
+.myRectangle {
+    margin: 10px;
+    padding: 30px;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 30px;
+}
+
+.myRectangle2 {
+    display: flex;
+    margin: 10px;
+    padding: 30px;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 30px;
+}
+
+.myLogoUNI {
+    width: auto;
+    height: 300px;
+    flex-shrink: 0;
+    float: left;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+
+.myRightElement {
+    color: #000;
+    text-align: center;
+    /* Aligner le texte à droite */
+    font-family: Saira Condensed;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 101.9%;
+    letter-spacing: 0.7px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 55%;
+    padding-right: 5%;
+}
+
+.myLeftText {
+    flex: 1;
+    color: #000;
+    text-align: center;
+    /* Aligner le texte à droite */
+    font-family: Saira Condensed;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 101.9%;
+    letter-spacing: 0.7px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    margin-right: 5%;
+
+}
+
+.myLogoPromeo {
+    width: auto;
+    height: 400px;
+    flex-shrink: 0;
+    float: right;
+}
+
+.myLogoUPJV {
+    width: auto;
+    height: 500px;
+    flex-shrink: 0;
+    float: left;
+    margin-left: 15%;
+
+}
+
+.myLogoITII {
+    width: auto;
+    height: 400px;
+    flex-shrink: 0;
+    float: left;
+    margin-left: 15%;
+
+}
+
+.link {
+    border: 0px;
+    background-color: #084663;
+    font-size: 25px;
+    color: #FFF;
+    padding: 10px 20px;
+}
+
+.link:hover {
+    background-color: #B04444;
+}
+
+
+
+.side-bar {
+    background: var(--BLEU, #084663);
+    min-width: 300px;
+    max-width: auto;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.3s ease;
+    transition-property: left;
+    z-index: 2;
+}
+
+.side-bar.active {
+    left: 0;
+}
+
+.side-bar .menu {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.side-bar .menu .item {
+    position: relative;
+    cursor: pointer;
+}
+
+.side-bar .menu .item a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+
+.side-bar .menu .item a:hover {
+    background: #B04444;
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item i {
+    margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu {
+    background: rgba(255, 255, 255, 0.1);
+    display: none;
+}
+
+.side-bar .menu .item .sub-menu a {
+    padding-left: 80px;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.close-btn {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.menu-btn {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 11.5px;
+    margin-left: 11.5px;
+    cursor: pointer;
+}
+
+header {
+    background: var(--BLEU, #084663);
+    width: 100%;
+    height: 82px;
+    flex-shrink: 0;
+}
+
+.myLogo {
+    width: 273px;
+    height: 59px;
+    flex-shrink: 0;
+    float: right;
+    margin-top: 11.5px;
+    margin-right: 11.5px;
+}
+
+.myButton {
+    font-size: 59px;
+    color: #FFF;
+}
+
+/* Début du Footer */
+
+#myFooter {
+    background: #084663; 
+    font-family: 'Saira Condensed';
+    color: #FFFFFF;
+    text-align: center;
+    height: 180%;
+    padding: 0.4% 0%;
+}
+
+#myFooterTable {
+    width: 80%;
+    margin: 2% auto;
+    font-size: 140%;
+    font-weight: 400; 
+}
+
+#myFooterTable td {
+    width: 33%;
+}
+
+.myFooterTableTitle {
+    display: block;
+    margin: 0% 20%;
+}
+
+.myFooterTableTitle h2{
+    margin: 8% 0%;
+    font-weight: 800;
+}
+
+.myFooterTableBar {
+    width: 2px; 
+    height: 200px; 
+    background-color: #FFFFFF;
+}
+
+#myFooterForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myFooterIcon {
+    cursor: pointer;
+    margin: 0% 2%;
+}
+
+.myFooterIcon:hover path{
+    fill: #B04444;
+}
+
+#myFooterBtnEmail {
+    background-color: #B04444;
+    color: #FFFFFF;
+    border-radius: 40px;
+    border: 0px;
+    padding: 2% 4%;
+    width: 40%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#myFooterBtnEmail:hover {
+    background-color: #FFFFFF;
+    color: #B04444;
+}
+
+#myFooterBtnEmail:hover svg path{
+    fill: #B04444;
+}
+
+#myFooterBtnEmail span {
+    font-size: 80%;
+    margin-right: 20%;
+}
+
+#myFooterEnd {
+    font-size: 120%;
+    font-weight: 600;
+}
+
+.myFooterLink {
+    text-decoration: none;
+    color: #FFFFFF !important;
+    margin: 0% 0.4%;
+}
+
+.myFooterLink:hover {
+    color: #B04444 !important;
+}
+
+#myFooterEndCredit{
+    text-align: right;
+    margin-top: 1%;
+    padding-right: 2%;
+}
+
+/* Fin du Footer */
