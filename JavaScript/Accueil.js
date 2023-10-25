@@ -11,11 +11,15 @@ document.getElementById("mySearch").addEventListener("keydown", function(event) 
         if (userInput.includes("tourisme")) {
 
             window.location.href = "../Tourisme.html";
-        } else if (userInput.includes("superieur")) {
+
+        } else if (userInput.includes("enseignement superieur")) {
 
             window.location.href = "../Superieur.html";
+
         } else if (userInput.includes("actualites")) {
-            window.location.href = "../Superieur.html";
+
+            window.location.href = "../Actualites.html";
+
         }
     }
 });
