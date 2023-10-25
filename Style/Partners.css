@@ -1,10 +1,11 @@
 .MyH1Partners {
-  font-family: 'Saira Condensed';
-	color: var(--ROUGE, #fff);
-	
-    font-weight: 800;
-
-	padding: 2%;
+  color: var(--BLEU, #FFF);
+  font-family: Saira Condensed;
+  font-weight: 800;
+  font-size: 350%;
+  font-style: normal;
+  line-height: normal;
+  padding: 2% 0% 0% 4%;
 }
 
 .MyPartners {

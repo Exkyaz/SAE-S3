@@ -10,12 +10,13 @@
 }
 
 #ActusTitle {
-    font-family: 'Saira Condensed';
-    color: var(--ROUGE, #084663);
-
+    color: var(--BLEU, #084663);
+    font-family: Saira Condensed;
     font-weight: 800;
-    padding: 2%;
-
+    font-size: 350%;
+    font-style: normal;
+    line-height: normal;
+    padding: 2% 0% 0% 4%;
 }
 
 #MyActus {
