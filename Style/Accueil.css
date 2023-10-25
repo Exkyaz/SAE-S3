@@ -285,7 +285,8 @@ hr.solid {
 #myAgendaOverlayText {
     position: absolute;
     top: 50%;
-    right: 2%;
+    margin-left: 70%;
+    z-index: 1000;
     transform: translate(-50%, -50%);
     text-align: left;
     display: inline;
