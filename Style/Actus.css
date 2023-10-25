@@ -21,6 +21,7 @@
 
 #MyActus {
     height: 61em;
+    background-color: #212121;
 }
 
 #LienActus {
@@ -163,7 +164,7 @@
 }
 
 .map>button.active:after {
-    background: #fff;
+    background: #212121;
     content: "";
     display: block;
     height: 65%;
