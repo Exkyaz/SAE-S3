@@ -1,5 +1,9 @@
 /* Début de Tourisme */
 
+body {
+    background-color: #212121 !important;
+}
+
 #myTourism {
     background: #212121; 
     font-family: 'Saira Condensed';
@@ -8,11 +12,13 @@
 }
 
 #myTourismTitle {
-    font-size: 360%;
-    font-weight: 800 !important;
-    color: #084663;
-    padding-left: 4%;
-    margin-bottom: 4%;
+    color: var(--BLEU, #084663);
+    font-family: Saira Condensed;
+    font-weight: 800;
+    font-size: 350%;
+    font-style: normal;
+    line-height: normal;
+    padding: 2% 0% 0% 4%;
 }
 
 #myTourismNav {

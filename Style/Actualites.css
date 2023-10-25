@@ -122,13 +122,13 @@ header {
 }
 
 .MyActualitesContener .TopOfActus .MyTitlesActus .MyH1Actus {
-    padding-top: 2%;
-    padding-left: 4%;
-    color: #084663;
+    color: var(--BLEU, #084663);
+    font-family: Saira Condensed;
     font-weight: 800;
     font-size: 350%;
+    font-style: normal;
     line-height: normal;
-    font-weight: bold !important;
+    padding: 2% 0% 0% 4%;
 }
 
 .MyActualitesContener .TopOfActus .MyTitlesActus .MyTextWayActus {
