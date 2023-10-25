@@ -1,18 +1,24 @@
 /* ANIMATION POUR MODIF LE BG COL EN 2 COL*/
 @keyframes mymove {
-    from {background-color: #212121;}
-    to {background-color: #fff;}
+    from {
+        background-color: #212121;
+    }
+
+    to {
+        background-color: #fff;
+    }
 }
 
 #ActusTitle {
     font-family: 'Saira Condensed';
-	color: var(--ROUGE, #084663);
-	
+    color: var(--ROUGE, #084663);
+
     font-weight: 800;
-	padding: 2%;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 2%;
+
 }
-#MyActus{
+
+#MyActus {
     height: 61em;
 }
 
@@ -25,10 +31,10 @@
     font-weight: 800;
     line-height: normal;
     position: absolute;
-    
-    right: 10%;
-    margin: 1em;
-    max-width: 80%; 
+
+    right: 23%;
+    margin-TOP: -2em;
+    max-width: 80%;
     transition: color 0.3s;
 }
 
@@ -44,7 +50,8 @@
     flex-direction: column;
     height: 500px;
     width: 72%;
-    margin-top: 5%; /*sert à rien*/
+    margin-top: 5%;
+    /*sert à rien*/
     /*min-height: 65%;
     max-height: 65%;*/
     justify-content: center;
@@ -53,39 +60,43 @@
 
 .wrapper {
     display: inline-flex;
-    align-items:flex-start;
+    align-items: flex-start;
     grid-gap: 1em;
     overflow: hidden;
     width: 80%;
     /*margin-left: 10%;*/
-   
+
 }
-.wrapper > .inner {
+
+.wrapper>.inner {
     /*background-color: pink;*/
     display: flex;
     grid-gap: 1em;
     transition: all 1s ease-in-out;
-    
+
 }
 
 .card {
     box-shadow: -3px 0px 10px #6c2929, 3px 0px 10px #6c2929;
-    margin: 0 15px; /*afin d'avoir une distance entre les 3 cards d'un wrapper*/
+    margin: 0 15px;
+    /*afin d'avoir une distance entre les 3 cards d'un wrapper*/
     transition: transform 0.2s;
-    cursor: pointer; 
+    cursor: pointer;
     position: relative;
 }
+
 .card:hover {
-    transform: scale(1.02); 
+    transform: scale(1.02);
 }
 
-.card > img {
+.card>img {
     display: flex;
     width: 100%;
     height: 50%;
-    object-fit:content;
+    object-fit: content;
 }
-.card > .content {
+
+.card>.content {
     /*flex: 0 0 33.3333%; */
     background: #B04444;
     width: 325px;
@@ -93,45 +104,52 @@
     min-height: 60%;
     max-height: 70%;
     flex-shrink: 0;
-    flex:1;
+    flex: 1;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
     padding: 1em;
-    text-align: center; 
+    text-align: center;
 }
 
-.card > .content > h1, .card > .content > h3 {
+.card>.content>h1,
+.card>.content>h3 {
     margin: 0.35em 0;
 }
-.card > .content > h1 {
+
+.card>.content>h1 {
     color: #fff;
     font-size: 1.25rem;
     line-height: 1;
 }
-.card > .content > h3 {
+
+.card>.content>h3 {
     color: #fff;
     font-size: 0.9rem;
     font-weight: 300;
 }
-.card > .content > h4 {
+
+.card>.content>.MyDateActu {
     color: #FFF;
     font-kerning: none;
     font-feature-settings: 'dnom' on, 'salt' on;
-    font-family: Saira Condensed;
-    font-size: 18px;
+    font-family: 'Saira Condensed';
+    font-size: 18;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-align:end;
+    text-align: end;
     position: absolute;
-    bottom: 100;
-    right: 0;
+    padding-top: 30px;
+    margin-left: 220px;
 }
 
+.myDateActu1{padding-top: 47px !important;}
+.myDateActu2{padding-top: 52px !important;}
 .map {
     margin-top: 1em;
 }
-.map > button {
+
+.map>button {
     all: unset;
     background: #B04444;
     cursor: pointer;
@@ -141,13 +159,15 @@
     height: 1em;
     width: 1em;
     display: inline-block;
-  }
-  .map > button.active:after {
+}
+
+.map>button.active:after {
     background: #fff;
     content: "";
     display: block;
     height: 65%;
     width: 65%;
     border-radius: 100%;
-    margin: 0 auto; /* Centre le point actif horizontalement */
-  }
+    margin: 0 auto;
+    /* Centre le point actif horizontalement */
+}
