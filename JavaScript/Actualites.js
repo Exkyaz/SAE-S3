@@ -6,18 +6,18 @@ const btnMenu = document.querySelector('.btn-menu');
 
 $(document).ready(function () {
   $('.sub-btn').click(function () {
-      $(this).next('.sub-menu').slideToggle();
-      $(this).find('.dropdown').toggleClass('rotate');
+    $(this).next('.sub-menu').slideToggle();
+    $(this).find('.dropdown').toggleClass('rotate');
   });
 
   $('.menu-btn').click(function () {
-      $('.side-bar').addClass('active');
-      $('.menu-btn').css("visibility", "hidden");
+    $('.side-bar').addClass('active');
+    $('.menu-btn').css("visibility", "hidden");
   });
 
   $('.close-btn').click(function () {
-      $('.side-bar').removeClass('active');
-      $('.menu-btn').css("visibility", "visible");
+    $('.side-bar').removeClass('active');
+    $('.menu-btn').css("visibility", "visible");
   });
 });
 
@@ -83,20 +83,32 @@ function changeActivePosition(activeItem) {
   }
   activeItem.classList.add('actived');
 };
-console.log(allCategoryPosts.length)
-console.log(document.querySelector('#all').classList.contains('actived'))
-if(allCategoryPosts.length > 10){
-  if(document.querySelector('#all').classList.contains('actived')){
-    document.querySelector('.myBouttonMoreResults').style.display="flex"
-  }
-}
 
-for(let i = 0; i<document.querySelector('.myBouttonMoreResults').classList.length;i++){
-  console.log(document.querySelector('.myBouttonMoreResults').classList[i])
-}
 
 /*document.querySelector("#SpanMoreResults").addEventListener('click', () => Apparition(postCache));*/
 
+/* Début du Footer */
 
+document.getElementById('myFooterFormLink').addEventListener('click', function () {
+  myFooterRediriger('http://www.beauvaisis.fr/communaute-agglomeration/nous-contacter.html');
+});
+document.getElementById('myFooterFacebook').addEventListener('click', function () {
+  myFooterRediriger('https://www.facebook.com/beauvaisis/?locale=fr_FR');
+});
+document.getElementById('myFooterLinkedIn').addEventListener('click', function () {
+  myFooterRediriger('https://www.linkedin.com/company/ville-de-beauvais/?originalSubdomain=fr');
+});
+document.getElementById('myFooterTwitter').addEventListener('click', function () {
+  myFooterRediriger('https://twitter.com/agglobeauvaisis');
+});
+document.getElementById('myFooterBtnEmail').addEventListener('click', function () {
+  myFooterRediriger('https://www.beauvaisis.fr/actualites/recevoir-la-newsletter.html');
+});
+
+function myFooterRediriger(siteUrl) {
+  window.location.href = siteUrl;
+}
+
+/* Fin du Footer */
 
 
