@@ -24,17 +24,35 @@ document.getElementById("mySearch").addEventListener("keydown", function(event) 
     }
 });
 
-/* Début de l'Agenda */
+window.onload = function() {
+    document.getElementById('myAgendaArticle1').addEventListener('mouseover', function() {
+        myAgendaChangerImageBg('Images/Architecture_Patrimoine_Agenda.jpg');
+    });
+    document.getElementById('myAgendaArticle2').addEventListener('mouseover', function() {
+        myAgendaChangerImageBg('Images/Campagne_Rose_Agenda.jpg');
+    });
+    document.getElementById('myAgendaArticle3').addEventListener('mouseover', function() {
+        myAgendaChangerImageBg('Images/Reunion_Publique_Agenda.jpg'); 
+    });
 
-document.getElementById('myAgendaArticle1').addEventListener('mouseover', function() {
-    myAgendaChangerImageBg('Images/Architecture_Patrimoine_Agenda.jpg');
-});
-document.getElementById('myAgendaArticle2').addEventListener('mouseover', function() {
-    myAgendaChangerImageBg('Images/Campagne_Rose_Agenda.jpg');
-});
-document.getElementById('myAgendaArticle3').addEventListener('mouseover', function() {
-    myAgendaChangerImageBg('Images/Reunion_Publique_Agenda.jpg'); 
-});
+    document.getElementById('myFooterFormLink').addEventListener('click', function() {
+        myFooterRediriger('http://www.beauvaisis.fr/communaute-agglomeration/nous-contacter.html');
+    });
+    document.getElementById('myFooterFacebook').addEventListener('click', function() {
+        myFooterRediriger('https://www.facebook.com/beauvaisis/?locale=fr_FR');
+    });
+    document.getElementById('myFooterLinkedIn').addEventListener('click', function() {
+        myFooterRediriger('https://www.linkedin.com/company/ville-de-beauvais/?originalSubdomain=fr'); 
+    });
+    document.getElementById('myFooterTwitter').addEventListener('click', function() {
+        myFooterRediriger('https://twitter.com/agglobeauvaisis');
+    });
+    document.getElementById('myFooterBtnEmail').addEventListener('click', function() {
+        myFooterRediriger('https://www.beauvaisis.fr/actualites/recevoir-la-newsletter.html');
+    });
+}
+
+/* Début de l'Agenda */
 
 function myAgendaChangerImageBg(imageUrl) {
     document.getElementById('myAgendaBgImage').src = imageUrl;
@@ -44,26 +62,9 @@ function myAgendaChangerImageBg(imageUrl) {
 
 /* Début du Footer */
 
-document.getElementById('myFooterFormLink').addEventListener('click', function() {
-    myFooterRediriger('http://www.beauvaisis.fr/communaute-agglomeration/nous-contacter.html');
-});
-document.getElementById('myFooterFacebook').addEventListener('click', function() {
-    myFooterRediriger('https://www.facebook.com/beauvaisis/?locale=fr_FR');
-});
-document.getElementById('myFooterLinkedIn').addEventListener('click', function() {
-    myFooterRediriger('https://www.linkedin.com/company/ville-de-beauvais/?originalSubdomain=fr'); 
-});
-document.getElementById('myFooterTwitter').addEventListener('click', function() {
-    myFooterRediriger('https://twitter.com/agglobeauvaisis');
-});
-document.getElementById('myFooterBtnEmail').addEventListener('click', function() {
-    myFooterRediriger('https://www.beauvaisis.fr/actualites/recevoir-la-newsletter.html');
-});
-
 function myFooterRediriger(siteUrl) {
     window.location.href = siteUrl;
 }
 
 /* Fin du Footer */
 
-/* Début du Header */
