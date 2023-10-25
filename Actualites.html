@@ -13,16 +13,178 @@
     <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
     <!-- MDB -->
     <script type="module" src="JavaScript/Actualites.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <!-- MDB -->
+    <link rel="stylesheet" href="Libraries/MDB/css/mdb.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 </head>
 
 <body class="MyBodyActualites">
     <!--A mettre la nav bar ici-->
+    <header>
 
+        <div class="menu-btn">
+            <i class="fas fa-bars myButton"></i>
+        </div>
+
+        <a href="Accueil.html"><img class="myLogo" src="Images/Logo.png"></a>
+
+    </header>
+
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+            <!-- <div class="item"><a href="#">Présentation</a></div>
+          <div class="item"><a href="#">Actualités</a></div>
+          <div class="item"><a href="#">Transport</a></div>
+          <div class="item"><a href="#">Aménagement Plan Climat</a></div>
+          <div class="item"><a href="#">Economie</a></div>
+          <div class="item"><a href="#">Habitat</a></div>
+          <div class="item"><a href="#">Politique de la ville</a></div>
+          <div class="item"><a href="#">Déchets</a></div>
+          <div class="item"><a href="#">Assainissement</a></div>
+          <div class="item"><a href="#">Culture, Loisirs et Famille</a></div>
+          <div class="item"><a href="#">Tourisme</a></div> -->
+            <div class="item">
+                <a class="sub-btn"></i>Présentation<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="http://www.beauvaisis.fr/communaute-agglomeration/presentation-generale.html"
+                        class="sub-item">Présentation Générale</a>
+                    <a href="http://www.beauvaisis.fr/communaute-agglomeration/fonctionnement-agglo-du-beauvaisis.html"
+                        class="sub-item">Fonctionnement de l'agglo</a>
+                    <a href="http://www.beauvaisis.fr/communaute-agglomeration/le-territoire-de-l-agglo-du-beauvaisis.html"
+                        class="sub-item">Le territoire de l'agglo</a>
+                    <a href="http://www.beauvaisis.fr/conseil-communautaire/" class="sub-item">Le conseil
+                        communautaire</a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"></i>Actualités<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="Actualites.html" class="sub-item">Actualités du Beauvaisis</a>
+                    <a href="http://www.beauvaisis.fr/actualites/actualites-economiques.html"
+                        class="sub-item">Actualités économiques</a>
+                    <a href="http://www.beauvaisis.fr/actualites/recevoir-la-newsletter.html" class="sub-item">Recevoir
+                        la Newsletter</a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"></i>Transport<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="http://www.beauvaisis.fr/transport/transports-urbains.html" class="sub-item">Transports
+                        Urbains Corolis</a>
+                    <a href="https://www.corolis.fr/se-deplacer" class="sub-item">Le réseau Corolis</a>
+                    <a href="http://www.beauvaisis.fr/transport/navette-aeroport.html" class="sub-item">Se rendre à
+                        l'aéroport</a>
+                    <a href="http://www.beauvaisis.fr/transport/tad-transport-a-la-demande.html" class="sub-item">TAD -
+                        Transport à la Demande</a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"></i>Aménagement Plan Climat<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="https://plui.beauvaisis.fr/" class="sub-item">Plan Local Urbanisme Intercommunal</a>
+                    <a href="http://www.beauvaisis.fr/amenagement-du-territoire/zones-amenagement-concerte.html"
+                        class="sub-item">Zones d'Aménagement Concerté</a>
+                    <a href="http://www.beauvaisis.fr/developpement-durable/rapport-d-activites-developpement-durable.html"
+                        class="sub-item">Rapport d'activités Développement Durable</a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"></i>Economie<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="http://www.beauvaisis.fr/developpement-economie/pourquoi-le-beauvaisis.html"
+                        class="sub-item">Pourquoi le Beauvaisis ?</a>
+                    <a href="http://www.beauvaisis.fr/developpement-economie/les-secteurs-cles-du-beauvaisis.html"
+                        class="sub-item">Les secteurs clés du Beauvaisis</a>
+                    <a href="http://www.beauvaisis.fr/developpement-economie/ils-ont-choisi-le-beauvaisis.html"
+                        class="sub-item">Ils ont choisi le Beauvaisis</a>
+                    <a href="http://www.beauvaisis.fr/developpement-economie/beauvais-porte-ouverte-a-linternational.html"
+                        class="sub-item">Porte ouverte à l'international</a>
+                    <a href="Superieur.html" class="sub-item">Enseignement supérieur</a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"></i>Habitat<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="https://plui.beauvaisis.fr/" class="sub-item">Plan Local Urbanisme Intercommunal</a>
+                    <a href="http://www.beauvaisis.fr/habitat/plan-renovation-confort-du-beauvaisis.html"
+                        class="sub-item">Plan Rénovation Confort du Beauvaisis</a>
+                    <a href="http://www.beauvaisis.fr/habitat/plh-programme-local-de-l-habitat.html"
+                        class="sub-item">Programme Local de l'Habitat</a>
+                    <a href="https://observatoire-habitat.beauvaisis.fr/" class="sub-item">Observatoire de l'Habitat</a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"></i>Politique de la ville<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="http://www.beauvaisis.fr/la-politique-de-la-ville.html" class="sub-item">Politique de la
+                        ville</a>
+                    <a href="http://www.beauvaisis.fr/politique-de-la-ville/contrat-de-ville-2023.html"
+                        class="sub-item">Contrat de ville 2023</a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"></i>Déchets<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="http://www.beauvaisis.fr/collecte-des-dechets/collecte-des-dechets-menagers.html"
+                        class="sub-item">Collecte des déchets ménagers</a>
+                    <a href="http://www.beauvaisis.fr/collecte-des-dechets/collecte-du-verre.html"
+                        class="sub-item">Collecte du verre</a>
+                    <a href="http://www.beauvaisis.fr/collecte-des-dechets/collecte-des-dechets-vegetaux.html"
+                        class="sub-item">Collecte des déchets végétaux</a>
+                    <a href="http://www.beauvaisis.fr/collecte-des-dechets/collecte-des-encombrants.html"
+                        class="sub-item">Collecte des encombrants</a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"></i>Assainissement<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="http://www.beauvaisis.fr/assainissement/assainissement-non-collectif/le-spanc.html"
+                        class="sub-item">Assainissement Non Collectif - SPANC</a>
+                    <a href="http://www.beauvaisis.fr/assainissement/assainissement-collectif/controles-en-cas-de-vente-d-un-bien-immobilier.html"
+                        class="sub-item">Assainissement Collectif - Demande de Diagnostic</a>
+                    <a href="http://www.beauvaisis.fr/assainissement/assainissement-des-eaux-usees/modes-de-gestion-de-lassainissement-par-commune.html"
+                        class="sub-item">Assainissement des eaux usées</a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"></i>Culture, Loisirs et Famille<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="http://www.beauvaisis.fr/maladrerie-saint-lazare/presentation-maladrerie-saint-lazare.html"
+                        class="sub-item">Maladerie Saint-Lazare</a>
+                    <a href="http://www.beauvaisis.fr/ecole-art-beauvaisis/presentation-ecole-art.html"
+                        class="sub-item">Ecole d'art du Beauvaisis</a>
+                    <a href="http://www.beauvaisis.fr/conservatoire-eustache-du-caurroy/conservatoire-eustache-du-caurroy.html"
+                        class="sub-item">Conservatoire Eustache du Caurroy</a>
+                    <a href="http://www.beauvaisis.fr/culture/le-reseau-des-mediatheques.html" class="sub-item">Le
+                        réseau des médiathèques</a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"></i>Tourisme<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="Tourisme.html" class="sub-item">Office de Tourisme du Beauvaisis</a>
+                    <a href="http://www.beauvaisis.fr/index.php?option=com_content&view=article&id=1608"
+                        class="sub-item">Aéroport de Beauvais-Tillé</a>
+                    <a href="https://www.visitbeauvais.fr/sejourner/hebergements/hotels/" class="sub-item">Hôtels dans
+                        le Beauvaisis</a>
+                    <a href="https://www.visitbeauvais.fr/fr/sejourner/chambres-d-hotes?start=10?undefined"
+                        class="sub-item">Chambres d'hôtes</a>
+                    <a href="http://www.beauvaisis.fr/tourisme/sites-touristiques-majeurs/cathedrale-saint-pierre.html"
+                        class="sub-item">La Cathédrale Saint Pierre - Beauvais</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="MyActualitesContener">
         <div class="TopOfActus">
             <div class="MyTitlesActus">
-                <h1 class="MyH1Actus"><sup>&mdash;</sup>Les Actus<sub>&mdash;</sub></h1>
+                <h1 class="MyH1Actus"><sup>&mdash;</sup>Les actus<sub>&mdash;</sub></h1>
                 <p class="MyTextWayActus"> <span class="MyTextWayActusSuite"><a class="MyTextWayActusLink"
                             href="Accueil.html">Accueil</a></span> > Actualités <span class="MyTextWayActusSuite">>
                         Actualités du Beauvaisis</span></p>
@@ -58,6 +220,7 @@
             </div>
         </div>
         <!--Fin menu circulaire-->
+
         <!--Contenu et articles-->
         <div class="MyFilterContainerActualites" id="MyFilterContainerActualites">
             <div class="MyCategoryHeadActualites">
@@ -85,15 +248,12 @@
                 </ul>
             </div>
 
-
-
             <div class="MyPostsCollectActus">
                 <div class="MyPostsMainContainerActus">
                     <!-- single post -->
-
-                    <a class="MyLinkActu"
-                        href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/4eme-edition-du-salon-des-livres-et-vous-a-hermes.html">
-                        <div class="all culture MyPostGauche">
+                    <div class="all culture MyPostGauche">
+                        <a class="MyLinkActu"
+                            href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/4eme-edition-du-salon-des-livres-et-vous-a-hermes.html">
                             <div class="MyPostImgActus">
                                 <img src="Images/Articles/Culture/Culture-Des-Livres-Et-Vous.jpg" class="MyImgActus"
                                     alt="post">
@@ -108,38 +268,36 @@
                                     <span><i class="fas fa-calendar"></i> 25/09/2023-14:20</span>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <!-- end of single post -->
                     <!-- single post -->
-
-                    <a class="MyLinkActu"
-                        href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/crevecoeur-le-grand-festival-barb-n-rock-du-son-et-des-barbus.html">
-                        <div class="all culture MyPostDroite">
+                    <div class="all culture MyPostDroite">
+                        <a class="MyLinkActu"
+                            href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/crevecoeur-le-grand-festival-barb-n-rock-du-son-et-des-barbus.html">
                             <div class="MyPostContentActus">
                                 <h2 class="MyH2TitreCateg">CULTURE</h2>
                                 <h2 class="MyH2TitleArticle">Crèvecœur-le-grand Festival Barb'n'rock, Du Son Et Des
                                     Barbus</h2>
-
-                                <div class="MyPostContentDateBottom">
+                                <div class="MyPostContentDateBottom f">
                                     <span><i class="fas fa-calendar"></i> 22/06/2023-14:00</span>
                                 </div>
+
                             </div>
-                            <div class="MyPostImgActus">
-                                <img src="Images/Articles/Culture/Culture-Barb'n'Rock.jpg" class="MyImgActus"
+
+                            <div class="MyPostImgActus e">
+                                <img src="Images/Articles/Culture/Culture-Barb'n'Rock.jpg" class="MyImgActus MyImgActusPost2"
                                     alt="post">
                             </div>
 
+                        </a>
 
-                        </div>
-                    </a>
+                    </div>
                     <!-- end of single post -->
-
                     <!-- single post -->
-
-                    <a class="MyLinkActu"
-                        href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/festival-les-petits-poissons-dans-l-o-du-27-mars-au-8-avril.html">
-                        <div class="all culture MyPostGauche">
+                    <div class="all culture MyPostGauche">
+                        <a class="MyLinkActu"
+                            href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/festival-les-petits-poissons-dans-l-o-du-27-mars-au-8-avril.html">
                             <div class="MyPostImgActus">
                                 <img src="Images/Articles/Culture/Culture-petits-poissons-dans-lo.jpg"
                                     class="MyImgActus" alt="post">
@@ -155,21 +313,19 @@
                                     <span><i class="fas fa-calendar"></i> 13/05/2023-11:30</span>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+
                     <!-- end of single post -->
-
-
                     <!-- single post -->
-
-                    <a class="MyLinkActu"
-                        href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/inscrivez-vous-a-l-ecole-d-art.html">
-                        <div class="all culture MyPostDroite">
-                            <div class="MyPostContentActus">
+                    <div class="all culture MyPostDroite">
+                        <a class="MyLinkActu"
+                            href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/inscrivez-vous-a-l-ecole-d-art.html">
+                            <div class="MyPostContentActus ">
                                 <h2 class="MyH2TitreCateg">CULTURE</h2>
                                 <h2 class="MyH2TitleArticle">Inscrivez-vous À L'ecole D'art !</h2>
 
-                                <div class="MyPostContentDateBottom">
+                                <div class="MyPostContentDateBottom d">
                                     <span><i class="fas fa-calendar"></i> 19/12/2022-10:05</span>
                                 </div>
                             </div>
@@ -177,18 +333,15 @@
                                 <img src="Images/logo-ecole-darts-duBeauvaisis.png" class="MyImgActus" alt="post">
 
                             </div>
+                        </a>
 
+                    </div>
 
-                        </div>
-                    </a>
                     <!-- end of single post -->
-
-
                     <!-- single post -->
-
-                    <a class="MyLinkActu"
-                        href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/campus-connecte-une-solution-de-proximite-pour-etudier-a-distance.html">
-                        <div class="all enssup MyPostGauche">
+                    <div class="all enssup MyPostGauche">
+                        <a class="MyLinkActu"
+                            href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/campus-connecte-une-solution-de-proximite-pour-etudier-a-distance.html">
                             <div class="MyPostImgActus">
                                 <img src="Images/Articles/EnsSup/EnsSup-campus-connecte.jpg" class="MyImgActus"
                                     alt="post">
@@ -204,37 +357,35 @@
                                     <span><i class="fas fa-calendar"></i> 25/05/2023-10:00</span>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <!-- end of single post -->
                     <!-- single post -->
-
-                    <a class="MyLinkActu"
-                        href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/appel-a-projets-pour-la-bipe.html">
-                        <div class="all enssup MyPostDroite">
+                    <div class="all enssup MyPostDroite">
+                        <a class="MyLinkActu"
+                            href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/appel-a-projets-pour-la-bipe.html">
                             <div class="MyPostContentActus">
                                 <h2 class="MyH2TitreCateg">Enseignement</h2>
                                 <h2 class="MyH2TitleArticle">Appel À Projets Pour La Bipe
                                 </h2>
 
-                                <div class="MyPostContentDateBottom">
+                                <div class="MyPostContentDateBottom d">
                                     <span><i class="fas fa-calendar"></i> 17/01/2023-14:00</span>
                                 </div>
                             </div>
                             <div class="MyPostImgActus">
-                                <img src="Images/Articles/EnsSup/EnsSup-bipe.jpg" class="MyImgActus" alt="post">
+                                <img src="Images/Articles/EnsSup/EnsSup-bipe.jpg" class="MyImgActus MyImgActusPost2"
+                                    alt="post">
 
                             </div>
-
-
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <!-- end of single post -->
                     <!-- single post -->
 
-                    <a class="MyLinkActu"
-                        href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/portes-ouvertes-a-unilasalle-beauvais-le-19-novembre-2022.html">
-                        <div class="all enssup MyPostGauche">
+                    <div class="all enssup MyPostGauche">
+                        <a class="MyLinkActu"
+                            href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/portes-ouvertes-a-unilasalle-beauvais-le-19-novembre-2022.html">
                             <div class="MyPostImgActus">
                                 <img src="Images/Articles/EnsSup/EnsSup-po-unilasalle.jpg" class="MyImgActus"
                                     alt="post">
@@ -250,16 +401,13 @@
                                     <span><i class="fas fa-calendar"></i> 15/11/2022-15:55</span>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <!-- end of single post -->
                     <!-- single post -->
-
-                    <a class="MyLinkActu"
-                        href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/unilasalle-ouvre-une-ecole-veterinaire.html">
-                        <div class="all enssup MyPostDroite">
-
-
+                    <div class="all enssup MyPostDroite">
+                        <a class="MyLinkActu"
+                            href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/unilasalle-ouvre-une-ecole-veterinaire.html">
                             <div class="MyPostContentActus">
                                 <h2 class="MyH2TitreCateg">Enseignement</h2>
                                 <h2 class="MyH2TitleArticle">Unilasalle Ouvre Une École Vétérinaire
@@ -274,14 +422,13 @@
                                     alt="post">
 
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <!-- end of single post -->
                     <!-- single post -->
-
-                    <a class="MyLinkActu"
-                        href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/la-fresque-du-climat-s-ouvre-aux-associations-et-aux-entreprises.html">
-                        <div class="all environnement MyPostGauche">
+                    <div class="all environnement MyPostGauche">
+                        <a class="MyLinkActu"
+                            href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/la-fresque-du-climat-s-ouvre-aux-associations-et-aux-entreprises.html">
                             <div class="MyPostImgActus">
                                 <img src="Images/Articles/Environnement/Env-fresque-du-climat.jpg" class="MyImgActus"
                                     alt="post">
@@ -298,16 +445,13 @@
                                     <span><i class="fas fa-calendar"></i> 16/10/2023-12:30</span>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <!-- end of single post -->
                     <!-- single post -->
-
-                    <a class="MyLinkActu"
-                        href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/l-ordure-ce-n-est-pas-dans-notre-nature.html">
-                        <div class="all environnement MyPostDroite">
-
-
+                    <div class="all environnement MyPostDroite">
+                        <a class="MyLinkActu"
+                            href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/l-ordure-ce-n-est-pas-dans-notre-nature.html">
                             <div class="MyPostContentActus">
                                 <h2 class="MyH2TitreCateg">Environnement</h2>
                                 <h2 class="MyH2TitleArticle">L’ordure, Ce N’est Pas Dans Notre Nature !
@@ -322,14 +466,13 @@
                                     class="MyImgActus" alt="post">
 
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <!-- end of single post -->
                     <!-- single post -->
-
-                    <a class="MyLinkActu"
-                        href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/les-habitants-de-goincourt-vont-planter-une-micro-foret-miyawaki.html">
-                        <div class="all environnement MyPostGauche">
+                    <div class="all environnement MyPostGauche">
+                        <a class="MyLinkActu"
+                            href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/les-habitants-de-goincourt-vont-planter-une-micro-foret-miyawaki.html">
                             <div class="MyPostImgActus">
                                 <img src="Images/Articles/Environnement/Env-micro-foret-goincourt.jpg"
                                     class="MyImgActus" alt="post">
@@ -346,16 +489,13 @@
                                     <span><i class="fas fa-calendar"></i> 06/09/2022-10:07</span>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <!-- end of single post -->
                     <!-- single post -->
-
-                    <a class="MyLinkActu"
-                        href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/adoptez-le-compostage-sous-toutes-ses-formes.html">
-                        <div class="all environnement MyPostDroite">
-
-
+                    <div class="all environnement MyPostDroite">
+                        <a class="MyLinkActu"
+                            href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/adoptez-le-compostage-sous-toutes-ses-formes.html">
                             <div class="MyPostContentActus">
                                 <h2 class="MyH2TitreCateg">Environnement</h2>
                                 <h2 class="MyH2TitleArticle">Adoptez Le Compostage Sous Toutes Ses Formes !</h2>
@@ -367,15 +507,14 @@
                             <div class="MyPostImgActus">
                                 <img src="Images/Articles/Environnement/Env-tri-a-la-source.jpg" class="MyImgActus"
                                     alt="post">
-
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <!-- end of single post -->
                     <!-- single post -->
-                    <a class="MyLinkActu"
-                        href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/une-aide-exceptionnelle-de-l-agglo-pour-les-commercants-victimes-des-emeutes-urbaines.html">
-                        <div class="all societe MyPostGauche">
+                    <div class="all societe MyPostGauche">
+                        <a class="MyLinkActu"
+                            href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/une-aide-exceptionnelle-de-l-agglo-pour-les-commercants-victimes-des-emeutes-urbaines.html">
                             <div class="MyPostImgActus">
                                 <img src="Images/Articles/Société/Soc-aide-emeutes-urbaines.jpg" class="MyImgActus"
                                     alt="post">
@@ -387,65 +526,67 @@
                                 <h2 class="MyH2TitleArticle">Une Aide Exceptionnelle De L’agglo Pour Les Commerçants
                                     Victimes Des Émeutes Urbaines</h2>
 
-                                <div class="MyPostContentDateBottom">
+                                <div class="MyPostContentDateBottom b">
                                     <span><i class="fas fa-calendar"></i> 13/07/2023-13:15</span>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <!-- end of single post -->
                     <!-- single post -->
-                    <a class="MyLinkActu"
-                        href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/un-an-de-succes-pour-la-maison-de-sante-a-hermes.html">
-                        <div class="all societe MyPostDroite">
-
-
+                    <div class="all societe MyPostDroite">
+                        <a class="MyLinkActu"
+                            href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/un-an-de-succes-pour-la-maison-de-sante-a-hermes.html">
                             <div class="MyPostContentActus">
                                 <h2 class="MyH2TitreCateg">Société</h2>
                                 <h2 class="MyH2TitleArticle">Un An De Succès Pour La Maison De Santé À Hermes</h2>
 
-                                <div class="MyPostContentDateBottom">
+                                <div class="MyPostContentDateBottom b">
                                     <span><i class="fas fa-calendar"></i> 18/09/2023-15:40</span>
                                 </div>
                             </div>
                             <div class="MyPostImgActus">
                                 <img src="Images/Articles/Société/Soc-maison-de-sante-hermes.jpg" class="MyImgActus"
                                     alt="post">
-
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <!-- end of single post -->
                     <!-- single post -->
-                    <a class="MyLinkActu"
-                        href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/plui-hm-du-beauvaisis-de-nouveaux-temps-d-informations-et-d-echanges-ouverts-a-tous.html">
-                        <div class="all societe MyPostGauche">
+                    <div class="all societe MyPostGauche">
+                        <a class="MyLinkActu"
+                            href="http://www.beauvaisis.fr/actualites/actualites-du-beauvaisis/plui-hm-du-beauvaisis-de-nouveaux-temps-d-informations-et-d-echanges-ouverts-a-tous.html">
                             <div class="MyPostImgActus">
                                 <img src="Images/Articles/Société/Soc-reunions-publiques-plui.jpg" class="MyImgActus"
                                     alt="post">
-
                             </div>
-
                             <div class="MyPostContentActus">
                                 <h2 class="MyH2TitreCateg">Société</h2>
                                 <h2 class="MyH2TitleArticle">Plui-hm Du Beauvaisis : De Nouveaux Temps D’informations Et
                                     D’échanges Ouverts À Tous</h2>
 
-                                <div class="MyPostContentDateBottom">
+                                <div class="MyPostContentDateBottom b">
                                     <span><i class="fas fa-calendar"></i> 16/08/2023-14:40</span>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <!-- end of single post -->
                 </div>
-                <a href="#MyFilterContainerActualites"><svg data-name="Livello 1" id="Livello_1" viewBox="0 0 128 128"
-                        xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);">
-                        <title />
+
+
+
+
+            </div>
+            <div class="MyBackTopSvgGG"> <a href="#MyFilterContainerActualites"><svg data-name="Livello 1"
+                        id="Livello_1" viewBox="0 0 128 128" width="48" height="48" xmlns="http://www.w3.org/2000/svg"
+                        style="transform: rotate(-90deg);" class="MyBackTopSvg">
                         <path
-                            d="M64,0a64,64,0,1,0,64,64A64.07,64.07,0,0,0,64,0Zm0,122a58,58,0,1,1,58-58A58.07,58.07,0,0,1,64,122Z" class = "MyBackTop" />
+                            d="M64,0a64,64,0,1,0,64,64A64.07,64.07,0,0,0,64,0Zm0,122a58,58,0,1,1,58-58A58.07,58.07,0,0,1,64,122Z"
+                            class="MyBackTop" />
                         <path
-                            d="M58.12,35.88a3,3,0,0,0-4.24,4.24L77.76,64,53.88,87.88a3,3,0,1,0,4.24,4.24l26-26a3,3,0,0,0,0-4.24Z" class = "MyBackTop"/>
+                            d="M58.12,35.88a3,3,0,0,0-4.24,4.24L77.76,64,53.88,87.88a3,3,0,1,0,4.24,4.24l26-26a3,3,0,0,0,0-4.24Z"
+                            class="MyBackTop" />
                     </svg>
                 </a>
             </div>
@@ -454,6 +595,110 @@
 
     </div>
 
+    <!-- Début du Footer -->
+
+    <footer id="myFooter">
+        <table id="myFooterTable">
+            <tr>
+                <th class="myFooterTableTitle">
+                    <h2>Nous contacter</h2>
+                </th>
+                <th rowspan="3">
+                    <div class="myFooterTableBar"></div>
+                </th>
+                <th class="myFooterTableTitle">
+                    <h2>Nous suivre</h2>
+                </th>
+                <th rowspan="3">
+                    <div class="myFooterTableBar"></div>
+                </th>
+                <th class="myFooterTableTitle">
+                    <h2>Nous lire</h2>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div id="myFooterForm">
+                        <svg id="myFooterFormLink" class="myFooterIcon" width="46" height="46" viewBox="0 0 46 46"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_100_44)">
+                                <path
+                                    d="M35.2091 24.3892V3.70475H4.33658V42.2954H18.5379C19.5567 42.2954 20.3902 43.1289 20.3902 44.1477C20.3902 45.1665 19.5567 46 18.5379 46H2.48416C1.46534 46 0.631836 45.1665 0.631836 44.1477V1.85232C0.631836 0.833507 1.46545 0 2.48416 0H37.0613C38.0801 0 38.9136 0.833507 38.9136 1.85232V24.3892C38.9136 25.408 38.0801 26.2415 37.0613 26.2415C36.0425 26.2415 35.2091 25.408 35.2091 24.3892ZM44.7487 28.8966C43.9768 28.2174 42.8038 28.2792 42.1245 29.051L31.9674 40.3503L26.8735 35.4416C26.1326 34.7315 24.9594 34.7623 24.2493 35.5033C23.5392 36.2444 23.5701 37.4174 24.3111 38.1275L30.7943 44.3637C31.1338 44.7033 31.5969 44.8886 32.0909 44.8886C32.1217 44.8886 32.1217 44.8886 32.1526 44.8886C32.6466 44.8578 33.1405 44.6416 33.4492 44.2711L44.8721 31.5516C45.5822 30.749 45.5204 29.5759 44.7487 28.8966ZM28.4171 10.8054H11.746C10.7272 10.8054 9.89365 11.6389 9.89365 12.6577C9.89365 13.6765 10.7272 14.51 11.746 14.51H28.4171C29.4359 14.51 30.2694 13.6765 30.2694 12.6577C30.2694 11.6389 29.4359 10.8054 28.4171 10.8054ZM30.2695 22.8456C30.2695 21.8268 29.436 20.9933 28.4172 20.9933H11.746C10.7272 20.9933 9.89365 21.8268 9.89365 22.8456C9.89365 23.8644 10.7272 24.698 11.746 24.698H28.4171C29.4359 24.698 30.2695 23.8644 30.2695 22.8456ZM11.746 30.8725C10.7272 30.8725 9.89365 31.706 9.89365 32.7248C9.89365 33.7436 10.7272 34.5771 11.746 34.5771H16.6856C17.7044 34.5771 18.5379 33.7436 18.5379 32.7248C18.5379 31.706 17.7044 30.8725 16.6856 30.8725H11.746Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_100_44">
+                                    <rect width="46" height="46" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>Formulaire</span>
+                    </div>
+                </td>
+                <td>
+                    <svg id="myFooterFacebook" class="myFooterIcon" width="50" height="50" viewBox="0 0 50 50"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_101_63)">
+                            <path
+                                d="M25.2734 49.5313C11.7578 49.5899 0.644532 38.3399 0.966798 24.5996C1.26953 11.5137 12.1094 0.703132 25.5859 0.849616C38.9355 0.9961 49.9805 12.1094 49.6191 25.8691C49.2773 38.8965 38.5254 49.5996 25.2734 49.5313ZM3.92578 25.2246C4.0332 37.4609 13.9551 46.8848 25.6738 46.6797C37.0215 46.4746 46.6406 37.2266 46.6406 25.1953C46.6406 12.959 36.6406 3.4961 24.8828 3.72071C13.5352 3.92579 4.00391 13.2031 3.92578 25.2246Z"
+                                fill="white" />
+                            <path
+                                d="M20.1953 42.3242C20.1953 36.5723 20.1953 30.8691 20.1953 25.1074C18.9258 25.1074 17.6953 25.1074 16.4355 25.1074C16.4355 23.1543 16.4355 21.2598 16.4355 19.3066C16.6016 19.2969 16.7676 19.2773 16.9434 19.2773C17.8516 19.2773 18.7695 19.2578 19.6777 19.2871C20.0781 19.2969 20.2148 19.1895 20.2051 18.7793C20.1855 17.2949 20.1855 15.8203 20.1953 14.3359C20.2051 12.666 20.6738 11.1523 21.8652 9.94141C23.0176 8.76953 24.4922 8.13477 26.0938 8.03711C28.6719 7.89063 31.2598 7.91016 33.8477 7.86133C33.877 7.86133 33.9062 7.89062 33.9648 7.91992C33.9648 9.88281 33.9648 11.8555 33.9648 13.877C33.7793 13.8867 33.6035 13.8965 33.4375 13.8965C32.2656 13.8965 31.0937 13.8965 29.9219 13.8965C28.7402 13.9063 28.0469 14.6094 28.0469 15.7715C28.0469 16.875 28.0469 17.9883 28.0566 19.0918C28.0566 19.1211 28.0762 19.1504 28.1055 19.2578C30.0391 19.2578 31.9922 19.2578 34.043 19.2578C33.7891 21.2402 33.5547 23.1348 33.3008 25.0977C31.5332 25.0977 29.8047 25.0977 28.0273 25.0977C28.0273 30.8789 28.0273 36.6016 28.0273 42.3438C25.4004 42.3242 22.8418 42.3242 20.1953 42.3242Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_101_63">
+                                <rect width="50" height="50" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <svg id="myFooterLinkedIn" class="myFooterIcon" width="50" height="50" viewBox="0 0 50 50"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.4994 1C10.5216 1 0 11.5276 0 24.5129C0 37.4986 10.5212 48.0267 23.4994 48.0267C36.478 48.0267 47 37.4986 47 24.5129C46.9996 11.5276 36.478 1 23.4994 1ZM13.7482 11.6049C15.3467 11.6049 16.6434 12.788 16.6434 14.2475C16.6434 15.7071 15.3467 16.8902 13.7482 16.8902C12.1489 16.8902 10.8531 15.7071 10.8531 14.2475C10.8531 12.788 12.1489 11.6049 13.7482 11.6049ZM16.6653 34.2079H10.945V19.2727H16.6653V34.2079ZM36.1034 34.2079H30.3554V25.9953C30.3554 25.0577 30.1815 24.3942 29.8349 24.0047C29.4879 23.616 29.0007 23.4209 28.3737 23.4209C27.6801 23.4209 27.1174 23.6835 26.6867 24.2088C26.2555 24.7341 26.0406 25.6761 26.0406 27.0357V34.2079H20.3198V19.2727H25.6464V21.7052C26.4424 20.7119 27.2486 20.0017 28.0637 19.5748C28.8788 19.1483 29.8715 18.9353 31.0429 18.9353C32.6268 18.9353 33.8657 19.4061 34.7609 20.3485C35.6552 21.2905 36.103 22.746 36.103 24.715L36.1034 34.2079Z"
+                            fill="white" />
+                    </svg>
+                    <svg id="myFooterTwitter" class="myFooterIcon" width="50" height="50" viewBox="0 0 50 50"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.4996 1C10.5212 1 0 11.5215 0 24.4996C0 37.4773 10.5212 48 23.4996 48C36.4784 48 47 37.4777 47 24.4996C47 11.5215 36.4784 1 23.4996 1ZM34.9713 18.6615C34.9713 18.6615 35.53 21.4306 33.5251 26.2952C31.5194 31.1597 26.5565 35.7614 19.7203 36.1888C12.8837 36.6159 9.20146 33.592 9.20146 33.592C14.3294 33.9865 16.5972 31.883 17.8133 31.1926C13.0474 30.5681 12.3571 26.9855 12.3571 26.9855C12.817 27.183 14.2303 27.1172 14.9865 26.9201C10.3197 25.7698 10.221 21.0698 10.221 21.0698C10.221 21.0698 11.9625 21.9572 12.9487 21.7926C8.44527 18.3742 11.0755 13.9042 11.0755 13.9042C17.0246 20.4123 23.335 20.0507 23.335 20.0507L23.3635 20.0934C23.2489 19.635 23.1871 19.1556 23.1871 18.6619C23.1871 15.408 25.8251 12.7705 29.079 12.7705C30.7978 12.7705 32.3447 13.5072 33.4219 14.6815L33.4593 14.6604C35.5625 14.5287 37.1078 13.4113 37.1078 13.4113C36.4674 15.282 35.107 16.1536 34.5389 16.447C34.5462 16.4644 34.5531 16.4819 34.5596 16.499C35.2947 16.321 37.2666 15.8387 37.7985 15.6794C36.6474 17.7826 34.9713 18.6615 34.9713 18.6615Z"
+                            fill="white" />
+                    </svg>
+                </td>
+                <td>S'inscrire à notre newsletter</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <button id="myFooterBtnEmail">
+                        <span>Votre email</span>
+                        <svg width="44" height="25" viewBox="0 0 44 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_101_82)">
+                                <path
+                                    d="M31.8242 0L29.8397 2.02734L38.6408 11.0642H0V13.9358H38.6408L29.8397 22.9727L31.8242 25L44 12.5L31.8242 0Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_101_82">
+                                    <rect width="44" height="25" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </td>
+            </tr>
+        </table>
+        <div id="myFooterEnd">
+            <a class="myFooterLink" href="http://www.beauvaisis.fr/">Accueil</a> | <a class="myFooterLink"
+                href="http://www.beauvaisis.fr/mentions-legales.html">Mention Légales</a>
+            <p id="myFooterEndCredit">Réalisation : Sarah - Wissal - Nadir - Eyci</p>
+        </div>
+    </footer>
+
+    <!-- Fin du Footer -->
 </body>
+<!-- MDB -->
+<script type="text/javascript" src="Libraries/MDB/js/mdb.min.js"></script>
 
 </html>
